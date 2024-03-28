@@ -14,6 +14,8 @@ struct ContentView: View {
 
     var body: some View {
         NavigationSplitView {
+            Text("Hello SwiftUI!");
+            Text("Team 17 - MC 1");
             List {
                 ForEach(items) { item in
                     NavigationLink {
