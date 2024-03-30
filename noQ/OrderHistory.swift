@@ -20,7 +20,7 @@ struct OrderHistory: View {
                     )
                     .foregroundColor(Color(red: 0.11, green: 0.11, blue: 0.11))
                 Spacer()
-            }.padding(.bottom, 11)
+            }.padding(.bottom, 12)
             
             ScrollView(){
                 // Begin Order 1
@@ -92,7 +92,7 @@ struct OrderHistory: View {
                         .background(Color(red: 0.29, green: 0.8, blue: 0.89))
                         .cornerRadius(8)
                     }
-                }.padding(12).frame(width: 300, alignment: .leading).background(.white)           .cornerRadius(12).shadow(color: .black.opacity(0.05), radius: 3.5, x: 1, y: 4).overlay(
+                }.padding(12).frame(width: 350, alignment: .leading).background(.white)           .cornerRadius(12).shadow(color: .black.opacity(0.05), radius: 3.5, x: 1, y: 4).overlay(
                     RoundedRectangle(cornerRadius: 12)
                       .inset(by: 0.5)
                       .stroke(Color(red: 0.95, green: 0.96, blue: 0.99), lineWidth: 1)
@@ -166,7 +166,7 @@ struct OrderHistory: View {
                         .background(Color(red: 0.29, green: 0.8, blue: 0.89))
                         .cornerRadius(8)
                     }
-                }.padding(12).frame(width: 300, alignment: .leading).background(.white)           .cornerRadius(12).shadow(color: .black.opacity(0.05), radius: 3.5, x: 1, y: 4).overlay(
+                }.padding(12).frame(width: 350, alignment: .leading).background(.white)           .cornerRadius(12).shadow(color: .black.opacity(0.05), radius: 3.5, x: 1, y: 4).overlay(
                     RoundedRectangle(cornerRadius: 12)
                       .inset(by: 0.5)
                       .stroke(Color(red: 0.95, green: 0.96, blue: 0.99), lineWidth: 1)
@@ -240,7 +240,7 @@ struct OrderHistory: View {
                         .background(Color(red: 0.29, green: 0.8, blue: 0.89))
                         .cornerRadius(8)
                     }
-                }.padding(12).frame(width: 300, alignment: .leading).background(.white)           .cornerRadius(12).shadow(color: .black.opacity(0.05), radius: 3.5, x: 1, y: 4).overlay(
+                }.padding(12).frame(width: 350, alignment: .leading).background(.white)           .cornerRadius(12).shadow(color: .black.opacity(0.05), radius: 3.5, x: 1, y: 4).overlay(
                     RoundedRectangle(cornerRadius: 12)
                       .inset(by: 0.5)
                       .stroke(Color(red: 0.95, green: 0.96, blue: 0.99), lineWidth: 1)
