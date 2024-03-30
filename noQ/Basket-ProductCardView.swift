@@ -39,6 +39,7 @@ struct Basket_ProductCardView: View {
                     
                     Text("Rp\(initPrice)")
                         .font(Font.custom("poppins", size:14))
+                        .foregroundStyle(Color(red:176/255, green:180/255, blue:184/255))
                 }
                 )
                 
