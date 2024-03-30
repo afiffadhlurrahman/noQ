@@ -15,6 +15,7 @@
 		EF913A0D2BB4FE3A001453E3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF913A0C2BB4FE3A001453E3 /* Item.swift */; };
 		EF913A0F2BB4FE3B001453E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF913A0E2BB4FE3B001453E3 /* Assets.xcassets */; };
 		EF913A122BB4FE3B001453E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF913A112BB4FE3B001453E3 /* Preview Assets.xcassets */; };
+		EF9C4DF02BB8592B000E4439 /* OrderHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4DEF2BB8592B000E4439 /* OrderHistory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EF913A0C2BB4FE3A001453E3 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		EF913A0E2BB4FE3B001453E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF913A112BB4FE3B001453E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF9C4DEF2BB8592B000E4439 /* OrderHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				EF913A082BB4FE3A001453E3 /* noQApp.swift */,
 				EF913A0A2BB4FE3A001453E3 /* ContentView.swift */,
 				0149CF3E2BB52675008BDD13 /* CatalogueView.swift */,
+				EF9C4DEF2BB8592B000E4439 /* OrderHistory.swift */,
 				EF913A0C2BB4FE3A001453E3 /* Item.swift */,
 				EF913A0E2BB4FE3B001453E3 /* Assets.xcassets */,
 				EF913A102BB4FE3B001453E3 /* Preview Content */,
@@ -177,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF9C4DF02BB8592B000E4439 /* OrderHistory.swift in Sources */,
 				EF913A0B2BB4FE3A001453E3 /* ContentView.swift in Sources */,
 				EF913A0D2BB4FE3A001453E3 /* Item.swift in Sources */,
 				0149CF3F2BB52675008BDD13 /* CatalogueView.swift in Sources */,
