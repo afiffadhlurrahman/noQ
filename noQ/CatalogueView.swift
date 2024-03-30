@@ -51,8 +51,6 @@ struct CatalogueView: View {
                         .font(Font.custom("Poppins-Regular", size: 14))
                         .foregroundColor(Constants.colorsBaseBlack)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                    VStack{
-                    }
                 }
                 .padding(.horizontal, 16)
                 .padding(.vertical, 12)

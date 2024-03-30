@@ -18,6 +18,7 @@
 		EF913A0D2BB4FE3A001453E3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF913A0C2BB4FE3A001453E3 /* Item.swift */; };
 		EF913A0F2BB4FE3B001453E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF913A0E2BB4FE3B001453E3 /* Assets.xcassets */; };
 		EF913A122BB4FE3B001453E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF913A112BB4FE3B001453E3 /* Preview Assets.xcassets */; };
+		EF9C4DF02BB8592B000E4439 /* OrderHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4DEF2BB8592B000E4439 /* OrderHistory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		EF913A0C2BB4FE3A001453E3 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		EF913A0E2BB4FE3B001453E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF913A112BB4FE3B001453E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF9C4DEF2BB8592B000E4439 /* OrderHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				20BFA0302BB799A1007899C5 /* BasketView.swift */,
 				2018A8AC2BB84CC20039D031 /* Basket-ProductCardView.swift */,
 				2018A8AE2BB87A930039D031 /* PaymentOptModalView.swift */,
+				EF9C4DEF2BB8592B000E4439 /* OrderHistory.swift */,
 				EF913A0C2BB4FE3A001453E3 /* Item.swift */,
 				EF913A0E2BB4FE3B001453E3 /* Assets.xcassets */,
 				EF913A102BB4FE3B001453E3 /* Preview Content */,
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20BFA0312BB799A1007899C5 /* BasketView.swift in Sources */,
+				EF9C4DF02BB8592B000E4439 /* OrderHistory.swift in Sources */,
 				EF913A0B2BB4FE3A001453E3 /* ContentView.swift in Sources */,
 				2018A8AD2BB84CC20039D031 /* Basket-ProductCardView.swift in Sources */,
 				EF913A0D2BB4FE3A001453E3 /* Item.swift in Sources */,
