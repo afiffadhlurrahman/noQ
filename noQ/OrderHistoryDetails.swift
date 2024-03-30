@@ -36,12 +36,14 @@ struct OrderHistoryDetails: View {
                     .foregroundColor(Color(red: 0.33, green: 0.34, blue: 0.35))
             }
             Spacer()
-            Text("Complete")
-                .font(Font.custom("Poppins-SemiBold", size: 16))
-                .frame(maxWidth: 116)
-                .background(Color(red: 0.94, green: 0.99, blue: 0.96))
-                .cornerRadius(8)
-                .foregroundColor(Color(red: 0.13, green: 0.77, blue: 0.37))
+            HStack{
+                Text("Complete")
+                    .font(Font.custom("Poppins-SemiBold", size: 16))
+                    .frame(maxWidth: 116, maxHeight: 32)
+                    .background(Color(red: 0.94, green: 0.99, blue: 0.96))
+                    .cornerRadius(8)
+                    .foregroundColor(Color(red: 0.13, green: 0.77, blue: 0.37))
+            }
             
         }.padding(.horizontal, 24).padding(.bottom, 16)
         
