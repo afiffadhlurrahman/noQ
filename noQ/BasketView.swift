@@ -90,17 +90,8 @@ struct BasketView: View {
                         .font(Font.custom("poppins-semibold", size:20))
                 }
 
-                HStack(alignment: .center, spacing: 8) { // Body/B4
-                    Text("Pay")
-                      .font(Font.custom("Poppins-semibold", size: 16))
-                      .multilineTextAlignment(.center)
-                      .foregroundColor(.white)
-                }
-                .padding(.horizontal, 32)
-                .padding(.vertical, 16)
-                .frame(maxWidth: .infinity, alignment: .center)
-                .background(Color(red: 0.29, green: 0.8, blue: 0.89))
-                .cornerRadius(14)
+                PaymentOptModalView()
+
             }
         }
         .padding(.horizontal, 20)
