@@ -15,7 +15,9 @@
 		2018A8B12BB9C4C70039D031 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018A8B02BB9C4C70039D031 /* HomeView.swift */; };
 		2018A8E92BBA775E0039D031 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018A8E82BBA775E0039D031 /* Constant.swift */; };
 		20BFA0312BB799A1007899C5 /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BFA0302BB799A1007899C5 /* BasketView.swift */; };
+		EF14F8092BBA7A5100789FD8 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF14F8082BBA7A5100789FD8 /* BackButton.swift */; };
 		EF1FA6BF2BB887EB00A35097 /* OrderHistoryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1FA6BE2BB887EB00A35097 /* OrderHistoryDetails.swift */; };
+		EF1FA6C12BBA474800A35097 /* Maps.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1FA6C02BBA474800A35097 /* Maps.swift */; };
 		EF913A092BB4FE3A001453E3 /* noQApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF913A082BB4FE3A001453E3 /* noQApp.swift */; };
 		EF913A0B2BB4FE3A001453E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF913A0A2BB4FE3A001453E3 /* ContentView.swift */; };
 		EF913A0D2BB4FE3A001453E3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF913A0C2BB4FE3A001453E3 /* Item.swift */; };
@@ -34,7 +36,9 @@
 		2018A8B02BB9C4C70039D031 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2018A8E82BBA775E0039D031 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		20BFA0302BB799A1007899C5 /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BasketView.swift; path = noQ/BasketView.swift; sourceTree = SOURCE_ROOT; };
+		EF14F8082BBA7A5100789FD8 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		EF1FA6BE2BB887EB00A35097 /* OrderHistoryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryDetails.swift; sourceTree = "<group>"; };
+		EF1FA6C02BBA474800A35097 /* Maps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
 		EF913A052BB4FE3A001453E3 /* noQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF913A082BB4FE3A001453E3 /* noQApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noQApp.swift; sourceTree = "<group>"; };
 		EF913A0A2BB4FE3A001453E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +84,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		EF14F8052BBA797D00789FD8 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				EF14F8082BBA7A5100789FD8 /* BackButton.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		EF9139FC2BB4FE3A001453E3 = {
 			isa = PBXGroup;
 			children = (
@@ -106,12 +118,14 @@
 				EF913A0A2BB4FE3A001453E3 /* ContentView.swift */,
 				0149CF3E2BB52675008BDD13 /* CatalogueView.swift */,
 				20BFA0302BB799A1007899C5 /* BasketView.swift */,
+				EF14F8052BBA797D00789FD8 /* Component */,
 				2018A8AC2BB84CC20039D031 /* Basket-ProductCardView.swift */,
 				2018A8AE2BB87A930039D031 /* PaymentOptModalView.swift */,
 				EF9C4DEF2BB8592B000E4439 /* OrderHistory.swift */,
 				EF1FA6BE2BB887EB00A35097 /* OrderHistoryDetails.swift */,
 				EF913A0C2BB4FE3A001453E3 /* Item.swift */,
 				2018A8B02BB9C4C70039D031 /* HomeView.swift */,
+				EF1FA6C02BBA474800A35097 /* Maps.swift */,
 				EF913A0E2BB4FE3B001453E3 /* Assets.xcassets */,
 				EF913A102BB4FE3B001453E3 /* Preview Content */,
 			);
@@ -203,8 +217,10 @@
 				EF9C4DF02BB8592B000E4439 /* OrderHistory.swift in Sources */,
 				2018A8B12BB9C4C70039D031 /* HomeView.swift in Sources */,
 				EF913A0B2BB4FE3A001453E3 /* ContentView.swift in Sources */,
+				EF1FA6C12BBA474800A35097 /* Maps.swift in Sources */,
 				2018A8AD2BB84CC20039D031 /* Basket-ProductCardView.swift in Sources */,
 				EF913A0D2BB4FE3A001453E3 /* Item.swift in Sources */,
+				EF14F8092BBA7A5100789FD8 /* BackButton.swift in Sources */,
 				2018A8AF2BB87A930039D031 /* PaymentOptModalView.swift in Sources */,
 				2018A8E92BBA775E0039D031 /* Constant.swift in Sources */,
 				0149CF3F2BB52675008BDD13 /* CatalogueView.swift in Sources */,

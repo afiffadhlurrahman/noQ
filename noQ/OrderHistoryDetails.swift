@@ -11,7 +11,7 @@ struct OrderHistoryDetails: View {
     var body: some View {
         VStack(spacing: 16){
             HStack{
-                Image(systemName: "chevron.left").font(.system(size: 24))
+                BackButton()
                 Spacer()
                 // Sub-Header/S3
                 Text("Order #4321")
@@ -150,7 +150,9 @@ struct OrderHistoryDetails: View {
             .background(Color(red: 0.29, green: 0.8, blue: 0.89))
             .cornerRadius(8)
 
-        }.padding(.horizontal, 20)
+        }
+        .padding(.horizontal, 20)
+        .navigationBarBackButtonHidden(true)
     }
 }
 
