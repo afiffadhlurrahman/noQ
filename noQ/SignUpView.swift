@@ -1,5 +1,5 @@
 //
-//  LogIn.swift
+//  SignUpView.swift
 //  noQ
 //
 //  Created by Annisa Az Zahra on 01/04/24.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct LogIn: View {
+struct SignUpView: View {
     @State private var email: String = ""
     @State private var password: String = ""
     
     var body: some View {
-        NavigationStack{
+        ScrollView{
             VStack(alignment: .leading){
                 Button(action: LogIn) {
                     // Sub-Header/S5›
@@ -32,7 +32,7 @@ struct LogIn: View {
                     Spacer()
                     // Header/H1
                     VStack (alignment: .center, spacing: 0){
-                        Text("Welcome back!")
+                        Text("Sign Up")
                           .font(
                             Font.custom("Poppins", size: 34)
                               .weight(.heavy)
@@ -40,13 +40,43 @@ struct LogIn: View {
                       .foregroundColor(Color(red: 0.11, green: 0.11, blue: 0.11))
                         
                         // Body/B1
-                        Text("You’ve been missed")
+                        Text("You’ll be shopping in no time!")
                           .font(Font.custom("Poppins", size: 20))
                           .foregroundColor(Color(red: 0.11, green: 0.11, blue: 0.11))
                     }
                     
                     // Form
                     VStack (alignment: .trailing, spacing: 16){
+                        VStack(alignment: .leading){
+                            Text("Name")
+                              .font(Font.custom("Poppins", size: 14))
+                              .multilineTextAlignment(.center)
+                              .foregroundColor(Color(red: 0.33, green: 0.34, blue: 0.35))
+                            TextField(text: $email, prompt: Text("Jane Doe")) {
+                            }.padding(16)
+                                .cornerRadius(14)
+                                .overlay(
+                                RoundedRectangle(cornerRadius: 14)
+                                .inset(by: 0.5)
+                                .stroke(Color(red: 0.69, green: 0.71, blue: 0.72), lineWidth: 1)
+                                )
+                        }
+                        
+                        VStack(alignment: .leading){
+                            Text("Username")
+                              .font(Font.custom("Poppins", size: 14))
+                              .multilineTextAlignment(.center)
+                              .foregroundColor(Color(red: 0.33, green: 0.34, blue: 0.35))
+                            TextField(text: $email, prompt: Text("janedoe12")) {
+                            }.padding(16)
+                                .cornerRadius(14)
+                                .overlay(
+                                RoundedRectangle(cornerRadius: 14)
+                                .inset(by: 0.5)
+                                .stroke(Color(red: 0.69, green: 0.71, blue: 0.72), lineWidth: 1)
+                                )
+                        }
+                        
                         VStack(alignment: .leading){
                             Text("Email")
                               .font(Font.custom("Poppins", size: 14))
@@ -69,6 +99,28 @@ struct LogIn: View {
                               .multilineTextAlignment(.center)
                               .foregroundColor(Color(red: 0.33, green: 0.34, blue: 0.35))
                             TextField(text: $password, prompt: Text("Your Password")) {
+                                Text("Username")
+                            }.padding(16)
+                                .cornerRadius(14)
+                                .overlay(
+                                RoundedRectangle(cornerRadius: 14)
+                                .inset(by: 0.5)
+                                .stroke(Color(red: 0.69, green: 0.71, blue: 0.72), lineWidth: 1)
+                                )
+                            // Body/B4
+                            Text("Password must be atleast 8 character")
+                              .font(Font.custom("Poppins", size: 12))
+                              .multilineTextAlignment(.center)
+                              .foregroundColor(Color(red: 0.33, green: 0.34, blue: 0.35))
+                        }
+                        
+                        VStack(alignment: .leading){
+                            Text("Confirm Your Password")
+                              .font(Font.custom("Poppins", size: 14))
+                              .multilineTextAlignment(.center)
+                              .foregroundColor(Color(red: 0.33, green: 0.34, blue: 0.35))
+                            TextField(text: $password, prompt: Text("Your Password")) {
+                                Text("Username")
                             }.padding(16)
                                 .cornerRadius(14)
                                 .overlay(
@@ -77,19 +129,13 @@ struct LogIn: View {
                                 .stroke(Color(red: 0.69, green: 0.71, blue: 0.72), lineWidth: 1)
                                 )
                         }
-                        
-                        Button(action: LogIn) {
-                            Text("Forgot your Password?")
-                                .font(Font.custom("Poppins", size: 12))
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color(red: 0.29, green: 0.8, blue: 0.89))
-                        }
+                    
                     }
                     
                     
                     Button(action: LogIn) {
                         HStack(alignment: .center, spacing: 8) { // Body/B4
-                            Text("Sign In")
+                            Text("Sign Up")
                                 .font(Font.custom("Poppins-semibold", size: 16))
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(.white)
@@ -105,12 +151,12 @@ struct LogIn: View {
                     
                     HStack{
                         // Body/B4
-                        Text("Didn’t have an account ? ")
+                        Text("Already have an account ? ")
                             .font(Font.custom("Poppins", size: 12))
                             .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
                             
                         Button(action: LogIn) {
-                            Text("Sign Up")
+                            Text("Sign In")
                                 .font(Font.custom("Poppins", size: 12))
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color(red: 0.29, green: 0.8, blue: 0.89))
@@ -130,5 +176,5 @@ struct LogIn: View {
 }
 
 #Preview {
-    LogIn()
+    SignUpView()
 }
