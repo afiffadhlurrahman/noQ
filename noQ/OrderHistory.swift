@@ -142,19 +142,21 @@ struct OrderHistory: View {
                             
                             HStack{
                                 // Button See Details
-                                HStack(alignment: .center, spacing: 8) { // Body/B4
-                                    Text("See Details")
-                                      .font(Font.custom("Poppins", size: 12))
-                                      .multilineTextAlignment(.center)
-                                      .foregroundColor(Color(red: 1, green: 0.76, blue: 0.29))
+                                NavigationLink(destination: OrderHistoryDetails()){
+                                    HStack(alignment: .center, spacing: 8) { // Body/B4
+                                        Text("See Details")
+                                            .font(Font.custom("Poppins", size: 12))
+                                            .multilineTextAlignment(.center)
+                                            .foregroundColor(Color(red: 1, green: 0.76, blue: 0.29))
+                                    }
+                                    .padding(.horizontal, 16)
+                                    .padding(.vertical, 8)
+                                    .frame(maxWidth: .infinity, alignment: .center)
+                                    .overlay(RoundedRectangle(cornerRadius: 8)
+                                        .inset(by: 0.5)
+                                        .stroke(Color(red: 1, green: 0.76, blue: 0.29), lineWidth: 1)
+                                    )
                                 }
-                                .padding(.horizontal, 16)
-                                .padding(.vertical, 8)
-                                .frame(maxWidth: .infinity, alignment: .center)
-                                .overlay(RoundedRectangle(cornerRadius: 8)
-                                    .inset(by: 0.5)
-                                    .stroke(Color(red: 1, green: 0.76, blue: 0.29), lineWidth: 1)
-                                )
                                 
                                 // Button Reorder
                                 HStack(alignment: .center, spacing: 8) { // Body/B4
@@ -216,20 +218,21 @@ struct OrderHistory: View {
                             
                             HStack{
                                 // Button See Details
-                                HStack(alignment: .center, spacing: 8) { // Body/B4
-                                    Text("See Details")
-                                      .font(Font.custom("Poppins", size: 12))
-                                      .multilineTextAlignment(.center)
-                                      .foregroundColor(Color(red: 1, green: 0.76, blue: 0.29))
+                                NavigationLink(destination: OrderHistoryDetails()){
+                                    HStack(alignment: .center, spacing: 8) { // Body/B4
+                                        Text("See Details")
+                                            .font(Font.custom("Poppins", size: 12))
+                                            .multilineTextAlignment(.center)
+                                            .foregroundColor(Color(red: 1, green: 0.76, blue: 0.29))
+                                    }
+                                    .padding(.horizontal, 16)
+                                    .padding(.vertical, 8)
+                                    .frame(maxWidth: .infinity, alignment: .center)
+                                    .overlay(RoundedRectangle(cornerRadius: 8)
+                                        .inset(by: 0.5)
+                                        .stroke(Color(red: 1, green: 0.76, blue: 0.29), lineWidth: 1)
+                                    )
                                 }
-                                .padding(.horizontal, 16)
-                                .padding(.vertical, 8)
-                                .frame(maxWidth: .infinity, alignment: .center)
-                                .overlay(RoundedRectangle(cornerRadius: 8)
-                                    .inset(by: 0.5)
-                                    .stroke(Color(red: 1, green: 0.76, blue: 0.29), lineWidth: 1)
-                                )
-                                
                                 // Button Reorder
                                 HStack(alignment: .center, spacing: 8) { // Body/B4
                                     Text("Reorder")
