@@ -13,6 +13,8 @@
 		0163438D2BB930270044FAD7 /* Catalogue-ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0163438C2BB930270044FAD7 /* Catalogue-ProductCardView.swift */; };
 		0163438F2BB931EF0044FAD7 /* Catalogue-CategoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0163438E2BB931EF0044FAD7 /* Catalogue-CategoryCardView.swift */; };
 		016343912BBA54B50044FAD7 /* Catalogue-CartCheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016343902BBA54B50044FAD7 /* Catalogue-CartCheckoutView.swift */; };
+		016343AE2BBAC36B0044FAD7 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016343AD2BBAC36B0044FAD7 /* ProductDetailView.swift */; };
+		016343B02BBAC3B80044FAD7 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016343AF2BBAC3B80044FAD7 /* Header.swift */; };
 		2018A8AD2BB84CC20039D031 /* Basket-ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018A8AC2BB84CC20039D031 /* Basket-ProductCardView.swift */; };
 		2018A8AF2BB87A930039D031 /* PaymentOptModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018A8AE2BB87A930039D031 /* PaymentOptModalView.swift */; };
 		2018A8B12BB9C4C70039D031 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018A8B02BB9C4C70039D031 /* HomeView.swift */; };
@@ -37,6 +39,8 @@
 		0163438C2BB930270044FAD7 /* Catalogue-ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Catalogue-ProductCardView.swift"; sourceTree = "<group>"; };
 		0163438E2BB931EF0044FAD7 /* Catalogue-CategoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Catalogue-CategoryCardView.swift"; sourceTree = "<group>"; };
 		016343902BBA54B50044FAD7 /* Catalogue-CartCheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Catalogue-CartCheckoutView.swift"; sourceTree = "<group>"; };
+		016343AD2BBAC36B0044FAD7 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		016343AF2BBAC3B80044FAD7 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		2018A8AC2BB84CC20039D031 /* Basket-ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Basket-ProductCardView.swift"; sourceTree = "<group>"; };
 		2018A8AE2BB87A930039D031 /* PaymentOptModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentOptModalView.swift; sourceTree = "<group>"; };
 		2018A8B02BB9C4C70039D031 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				EF14F8082BBA7A5100789FD8 /* BackButton.swift */,
+				016343AF2BBAC3B80044FAD7 /* Header.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 				0163438E2BB931EF0044FAD7 /* Catalogue-CategoryCardView.swift */,
 				016343902BBA54B50044FAD7 /* Catalogue-CartCheckoutView.swift */,
 				20BFA0302BB799A1007899C5 /* BasketView.swift */,
+				016343AD2BBAC36B0044FAD7 /* ProductDetailView.swift */,
 				EF14F8052BBA797D00789FD8 /* Component */,
 				2018A8AC2BB84CC20039D031 /* Basket-ProductCardView.swift */,
 				2018A8AE2BB87A930039D031 /* PaymentOptModalView.swift */,
@@ -224,12 +230,14 @@
 				20BFA0312BB799A1007899C5 /* BasketView.swift in Sources */,
 				EF1FA6BF2BB887EB00A35097 /* OrderHistoryDetails.swift in Sources */,
 				EF9C4DF02BB8592B000E4439 /* OrderHistory.swift in Sources */,
+				016343AE2BBAC36B0044FAD7 /* ProductDetailView.swift in Sources */,
 				2018A8B12BB9C4C70039D031 /* HomeView.swift in Sources */,
 				0163438F2BB931EF0044FAD7 /* Catalogue-CategoryCardView.swift in Sources */,
 				016343912BBA54B50044FAD7 /* Catalogue-CartCheckoutView.swift in Sources */,
 				EF913A0B2BB4FE3A001453E3 /* ContentView.swift in Sources */,
 				EF1FA6C12BBA474800A35097 /* Maps.swift in Sources */,
 				2018A8AD2BB84CC20039D031 /* Basket-ProductCardView.swift in Sources */,
+				016343B02BBAC3B80044FAD7 /* Header.swift in Sources */,
 				EF913A0D2BB4FE3A001453E3 /* Item.swift in Sources */,
 				EF14F8092BBA7A5100789FD8 /* BackButton.swift in Sources */,
 				0163438D2BB930270044FAD7 /* Catalogue-ProductCardView.swift in Sources */,

@@ -14,10 +14,11 @@ struct Catalogue_CartCheckoutView: View {
     var disc: String
     var initPrice: String
     var finPrice: String
-    var qty: Int
+    @State var qty: Int = 0
     var isAddToBasket: Bool
     
     var body: some View {
+        
         
         VStack{
             HStack(alignment: .center,spacing:16){
@@ -51,13 +52,20 @@ struct Catalogue_CartCheckoutView: View {
                 
             }.padding(12).frame(maxWidth: .infinity, alignment: .leading).background(.white)
             
+            
             HStack(alignment: .center){
+                let minusColor: Color = qty > 0 ? Color(red: 255/255, green: 195/255, blue: 75/255) : Color(red: 0.8, green: 0.82, blue: 0.84)
+                
                 Text("Item Quantity")
                     .font(Font.custom("Poppins-SemiBold", size:16))
                 Spacer()
                 HStack {
-                    Image(systemName: "plus.circle.fill").font(.system(size: 24))
-                        .foregroundStyle(Color(red: 255/255, green: 195/255, blue: 75/255))
+                    Image(systemName: "minus.circle.fill").font(.system(size: 24))
+                        .foregroundStyle(minusColor).onTapGesture {
+                            if self.qty > 0 {
+                                self.qty -= 1
+                            }
+                        }
                     HStack(alignment: .center, spacing: 10) {
                         Text("\(qty)")
                             .font(Font.custom("Poppins-Regular", size:12))
@@ -71,17 +79,20 @@ struct Catalogue_CartCheckoutView: View {
                                 .inset(by: 0.5)
                                 .stroke(Color(red: 0.8, green: 0.82, blue: 0.84), lineWidth: 1)
                         )
-                    Image(systemName: "minus.circle.fill")
+                    Image(systemName: "plus.circle.fill")
                         .font(.system(size: 24))
-                        .foregroundStyle(Color(red: 255/255, green: 195/255, blue: 75/255))
+                        .foregroundStyle(Color(red: 255/255, green: 195/255, blue: 75/255)).onTapGesture {
+                            self.qty += 1
+                        }
                 }.aspectRatio(contentMode: .fit)
             }
             
+            let text = isAddToBasket ? "Add to Basket" : "Checkout"
+            let icon = isAddToBasket ? "basket" : "chevron.right"
+            
             HStack(alignment: .center, spacing: 16) {
                 // Sub-Header/S4
-                let text = isAddToBasket ? "Add to Basket" : "Checkout"
-                let icon = isAddToBasket ? "basket" : "chevron.right"
-
+                
                 Image(systemName: icon).foregroundColor(.white)
                 Text(text)
                     .font(
@@ -90,13 +101,14 @@ struct Catalogue_CartCheckoutView: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(.white)
             }.environment(\.layoutDirection, isAddToBasket ? .leftToRight : .rightToLeft)
-            .padding(.horizontal, 32)
-            .padding(.vertical, 16)
-            .frame(maxWidth: .infinity, alignment: .center)
-            .background(Color(red: 0.29, green: 0.8, blue: 0.89))
-            .cornerRadius(14)
+                .padding(.horizontal, 32)
+                .padding(.vertical, 16)
+                .frame(maxWidth: .infinity, alignment: .center)
+                .background(Color(red: 0.29, green: 0.8, blue: 0.89))
+                .cornerRadius(14)
         }.padding(.horizontal, 20)
             .padding(.vertical, 40)
+        
     }
 }
 

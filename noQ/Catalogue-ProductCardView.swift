@@ -47,41 +47,48 @@ struct Catalogue_ProductCardView: View {
     }
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 6){
-            Image(imgSrc).resizable()
-                .frame(width: 130.0, height: 130.0).padding(.horizontal, 28.5)
-            // Sub-Header/S5
-            Text(productName)
-                .font(
-                    Font.custom("Poppins-SemiBold", size: 14)
-                )
-                .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
-            
-            HStack{
-                HStack(alignment: .top) {
-                    Text("\(disc) Off")
+        VStack(alignment: .center, spacing: 6){
+            NavigationLink(destination: ProductDetailView(
+                imgSrc: imgSrc, productName: productName, disc: disc, initPrice: initPrice, finPrice: finPrice))  {
+                VStack(alignment: .center, spacing: 6){
+                    Image(imgSrc).resizable()
+                        .frame(width: 130.0, height: 130.0).padding(.horizontal, 28.5)
+                    // Sub-Header/S5
+                    Text(productName)
                         .font(
-                            Font.custom("Poppins-Regular", size: 10)
-                                .weight(.medium)
+                            Font.custom("Poppins-SemiBold", size: 14)
                         )
-                        .foregroundColor(.white)
+                        .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26)).frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+                    
+                    HStack{
+                        HStack(alignment: .top) {
+                            Text("\(disc) Off")
+                                .font(
+                                    Font.custom("Poppins-Regular", size: 10)
+                                        .weight(.medium)
+                                )
+                                .foregroundColor(.white)
+                        }
+                        .padding(.horizontal, 4)
+                        .background(Color(red: 0.96, green: 0.25, blue: 0.37))
+                        .cornerRadius(Constants.borderRadiusDEFAULT)
+                        
+                        Text("Rp\(initPrice)")
+                            .font(Font.custom("Inter", size: 12))
+                            .strikethrough()
+                            .foregroundColor(Color(red: 0.69, green: 0.71, blue: 0.72))
+                        
+                        Spacer()
+                    }
+                    
+                    Text("Rp\(finPrice)")
+                        .font(
+                            Font.custom("Poppins-SemiBold", size: 14)
+                                .weight(.semibold)
+                        )
+                        .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26)).frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
                 }
-                .padding(.horizontal, 4)
-                .background(Color(red: 0.96, green: 0.25, blue: 0.37))
-                .cornerRadius(Constants.borderRadiusDEFAULT)
-                
-                Text("Rp\(initPrice)")
-                    .font(Font.custom("Inter", size: 12))
-                    .strikethrough()
-                    .foregroundColor(Color(red: 0.69, green: 0.71, blue: 0.72))
             }
-            
-            Text("Rp\(finPrice)")
-                .font(
-                    Font.custom("Poppins-SemiBold", size: 14)
-                        .weight(.semibold)
-                )
-                .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
             
             HStack{
                 HStack(alignment: .center, spacing: 8) { // Body/B4
@@ -119,11 +126,10 @@ struct Catalogue_ProductCardView: View {
                 }  .presentationDetents([.fraction(0.30)])
                     .presentationCompactAdaptation(.none)
                     .presentationDragIndicator(.visible)
-                    .padding(.horizontal, 20)
                     .padding(.top, 16)
             }
             
-        }.padding(12).frame(width: 187, alignment: .leading).background(.white)           .cornerRadius(12).shadow(color: .black.opacity(0.05), radius: 3.5, x: 0, y: 4).overlay(
+        }.padding(12).frame(maxWidth: 187).background(.white)           .cornerRadius(12).shadow(color: .black.opacity(0.05), radius: 3.5, x: 0, y: 4).overlay(
             RoundedRectangle(cornerRadius: 12)
                 .inset(by: 0.5)
                 .stroke(Color(red: 0.95, green: 0.96, blue: 0.99), lineWidth: 1)
