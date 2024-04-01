@@ -21,6 +21,7 @@
 		EF913A0F2BB4FE3B001453E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF913A0E2BB4FE3B001453E3 /* Assets.xcassets */; };
 		EF913A122BB4FE3B001453E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF913A112BB4FE3B001453E3 /* Preview Assets.xcassets */; };
 		EF9C4DF02BB8592B000E4439 /* OrderHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4DEF2BB8592B000E4439 /* OrderHistory.swift */; };
+		F599E2A72BBA97D3005D627D /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F599E2A62BBA97D3005D627D /* LogIn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		EF913A0E2BB4FE3B001453E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF913A112BB4FE3B001453E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EF9C4DEF2BB8592B000E4439 /* OrderHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistory.swift; sourceTree = "<group>"; };
+		F599E2A62BBA97D3005D627D /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				0149CF3E2BB52675008BDD13 /* CatalogueView.swift */,
 				20BFA0302BB799A1007899C5 /* BasketView.swift */,
 				2018A8AC2BB84CC20039D031 /* Basket-ProductCardView.swift */,
+				F599E2A62BBA97D3005D627D /* LogIn.swift */,
 				2018A8AE2BB87A930039D031 /* PaymentOptModalView.swift */,
 				EF9C4DEF2BB8592B000E4439 /* OrderHistory.swift */,
 				EF1FA6BE2BB887EB00A35097 /* OrderHistoryDetails.swift */,
@@ -197,6 +200,7 @@
 			files = (
 				20BFA0312BB799A1007899C5 /* BasketView.swift in Sources */,
 				EF1FA6BF2BB887EB00A35097 /* OrderHistoryDetails.swift in Sources */,
+				F599E2A72BBA97D3005D627D /* LogIn.swift in Sources */,
 				EF9C4DF02BB8592B000E4439 /* OrderHistory.swift in Sources */,
 				EF913A0B2BB4FE3A001453E3 /* ContentView.swift in Sources */,
 				EF1FA6C12BBA474800A35097 /* Maps.swift in Sources */,
