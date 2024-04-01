@@ -111,7 +111,7 @@ struct PaymentOptModalView: View {
                 }
             
                 
-            }  .presentationDetents([.fraction(0.70)])
+            }  .presentationDetents([.fraction(0.70), .large])
                 .presentationCompactAdaptation(.none)
                 .presentationDragIndicator(.visible)
                 .padding(.horizontal, 20)
