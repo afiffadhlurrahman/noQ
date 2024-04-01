@@ -20,7 +20,7 @@ struct OrderHistory: View {
                     )
                     .foregroundColor(Color(red: 0.11, green: 0.11, blue: 0.11))
                 Spacer()
-            }.padding(.bottom, 12)
+            }.padding(.horizontal, 12)
             
             ScrollView(){
                 VStack(spacing: 24){
