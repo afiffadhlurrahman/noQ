@@ -19,10 +19,11 @@ struct CustomDivider: View {
 }
 struct BasketView: View {
     var body: some View {
-        
+
         VStack(spacing: 19) {
             HStack{
-                Image(systemName: "chevron.left").font(.system(size: 24))
+
+                BackButton()
                 Spacer()
                 // Sub-Header/S3
                 Text("Sigit's Basket")
@@ -32,7 +33,7 @@ struct BasketView: View {
                     .foregroundColor(Color(red: 0.11, green: 0.11, blue: 0.11))
                 Spacer()
             }
-            
+
             VStack(alignment: .leading, spacing: 4){
                 HStack(spacing: 4){
                     Image(systemName: "storefront").font(.system(size: 16))
@@ -42,13 +43,13 @@ struct BasketView: View {
                     Text("Lawson Syahdan").font(Font.custom("Poppins", size: 16)).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     Image(systemName: "chevron.down").font(.system(size: 16))
                 }
-                
+
             }
             .padding(12)
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(Color(red: 255/255, green:246/255, blue:228/255))
             .cornerRadius(8)
-            
+
             Basket_ProductCardView(
                 imgSrc: "pocky",
                 productName: "Pocky Chocolate",
@@ -57,7 +58,7 @@ struct BasketView: View {
                 finPrice: "10,800",
                 qty:2
             )
-            
+
             Basket_ProductCardView(
                 imgSrc: "oreo",
                 productName: "Oreo Strawberry",
@@ -66,7 +67,7 @@ struct BasketView: View {
                 finPrice: "10,800",
                 qty:1
             )
-            
+
             Basket_ProductCardView(
                 imgSrc: "onigiri",
                 productName: "Onigiri Spicy Salmon",
@@ -75,13 +76,13 @@ struct BasketView: View {
                 finPrice: "10,800",
                 qty:2
             )
-            
-            
+
+
             Spacer()
-            
+
             VStack(spacing: 16) {
                 CustomDivider(color: Color(red: 199/255, green: 239/255, blue: 246/255), height: 2)
-                
+
                 HStack{
                     Text("4 Items")
                         .font(Font.custom("poppins-semibold", size:14))
@@ -95,11 +96,13 @@ struct BasketView: View {
             }
         }
         .padding(.horizontal, 20)
-        
-        
+        .navigationBarBackButtonHidden(true)
+
+
     }
 }
 
 #Preview {
     BasketView()
 }
+
