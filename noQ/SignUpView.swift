@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct SignUpView: View {
+    @State private var name: String = ""
+    @State private var username: String = ""
     @State private var email: String = ""
     @State private var password: String = ""
+    @State private var passwordConf: String = ""
+    
     
     var body: some View {
         ScrollView{
@@ -35,9 +39,9 @@ struct SignUpView: View {
                         Text("Sign Up")
                           .font(
                             Font.custom("Poppins", size: 34)
-                              .weight(.heavy)
                           )
-                      .foregroundColor(Color(red: 0.11, green: 0.11, blue: 0.11))
+                          .fontWeight(.bold)
+                          .foregroundColor(Color(red: 0.11, green: 0.11, blue: 0.11))
                         
                         // Body/B1
                         Text("You’ll be shopping in no time!")
@@ -52,7 +56,7 @@ struct SignUpView: View {
                               .font(Font.custom("Poppins", size: 14))
                               .multilineTextAlignment(.center)
                               .foregroundColor(Color(red: 0.33, green: 0.34, blue: 0.35))
-                            TextField(text: $email, prompt: Text("Jane Doe")) {
+                            TextField(text: $name, prompt: Text("Jane Doe")) {
                             }.padding(16)
                                 .cornerRadius(14)
                                 .overlay(
@@ -67,7 +71,7 @@ struct SignUpView: View {
                               .font(Font.custom("Poppins", size: 14))
                               .multilineTextAlignment(.center)
                               .foregroundColor(Color(red: 0.33, green: 0.34, blue: 0.35))
-                            TextField(text: $email, prompt: Text("janedoe12")) {
+                            TextField(text: $username, prompt: Text("janedoe12")) {
                             }.padding(16)
                                 .cornerRadius(14)
                                 .overlay(
@@ -107,11 +111,7 @@ struct SignUpView: View {
                                 .inset(by: 0.5)
                                 .stroke(Color(red: 0.69, green: 0.71, blue: 0.72), lineWidth: 1)
                                 )
-                            // Body/B4
-                            Text("Password must be atleast 8 character")
-                              .font(Font.custom("Poppins", size: 12))
-                              .multilineTextAlignment(.center)
-                              .foregroundColor(Color(red: 0.33, green: 0.34, blue: 0.35))
+                            
                         }
                         
                         VStack(alignment: .leading){
@@ -119,7 +119,7 @@ struct SignUpView: View {
                               .font(Font.custom("Poppins", size: 14))
                               .multilineTextAlignment(.center)
                               .foregroundColor(Color(red: 0.33, green: 0.34, blue: 0.35))
-                            TextField(text: $password, prompt: Text("Your Password")) {
+                            TextField(text: $passwordConf, prompt: Text("Your Password")) {
                                 Text("Username")
                             }.padding(16)
                                 .cornerRadius(14)

@@ -23,6 +23,7 @@
 		EF9C4DF02BB8592B000E4439 /* OrderHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4DEF2BB8592B000E4439 /* OrderHistory.swift */; };
 		F599E2A72BBA97D3005D627D /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F599E2A62BBA97D3005D627D /* LogIn.swift */; };
 		F599E2A92BBAB355005D627D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F599E2A82BBAB355005D627D /* SignUpView.swift */; };
+		F599E2AB2BBAC322005D627D /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F599E2AA2BBAC322005D627D /* LandingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		EF9C4DEF2BB8592B000E4439 /* OrderHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistory.swift; sourceTree = "<group>"; };
 		F599E2A62BBA97D3005D627D /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 		F599E2A82BBAB355005D627D /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		F599E2AA2BBAC322005D627D /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				2018A8AC2BB84CC20039D031 /* Basket-ProductCardView.swift */,
 				F599E2A62BBA97D3005D627D /* LogIn.swift */,
 				F599E2A82BBAB355005D627D /* SignUpView.swift */,
+				F599E2AA2BBAC322005D627D /* LandingView.swift */,
 				2018A8AE2BB87A930039D031 /* PaymentOptModalView.swift */,
 				EF9C4DEF2BB8592B000E4439 /* OrderHistory.swift */,
 				EF1FA6BE2BB887EB00A35097 /* OrderHistoryDetails.swift */,
@@ -202,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20BFA0312BB799A1007899C5 /* BasketView.swift in Sources */,
+				F599E2AB2BBAC322005D627D /* LandingView.swift in Sources */,
 				EF1FA6BF2BB887EB00A35097 /* OrderHistoryDetails.swift in Sources */,
 				F599E2A72BBA97D3005D627D /* LogIn.swift in Sources */,
 				EF9C4DF02BB8592B000E4439 /* OrderHistory.swift in Sources */,
