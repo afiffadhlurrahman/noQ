@@ -10,6 +10,9 @@
 		0149CF3F2BB52675008BDD13 /* CatalogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0149CF3E2BB52675008BDD13 /* CatalogueView.swift */; };
 		0149CF412BB52C43008BDD13 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0149CF402BB52C43008BDD13 /* Poppins-SemiBold.ttf */; };
 		0149CF422BB52D9D008BDD13 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0149CF3B2BB52468008BDD13 /* Poppins-Regular.ttf */; };
+		0163438D2BB930270044FAD7 /* Catalogue-ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0163438C2BB930270044FAD7 /* Catalogue-ProductCardView.swift */; };
+		0163438F2BB931EF0044FAD7 /* Catalogue-CategoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0163438E2BB931EF0044FAD7 /* Catalogue-CategoryCardView.swift */; };
+		016343912BBA54B50044FAD7 /* Catalogue-CartCheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016343902BBA54B50044FAD7 /* Catalogue-CartCheckoutView.swift */; };
 		2018A8AD2BB84CC20039D031 /* Basket-ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018A8AC2BB84CC20039D031 /* Basket-ProductCardView.swift */; };
 		2018A8AF2BB87A930039D031 /* PaymentOptModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018A8AE2BB87A930039D031 /* PaymentOptModalView.swift */; };
 		2018A8B12BB9C4C70039D031 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018A8B02BB9C4C70039D031 /* HomeView.swift */; };
@@ -31,6 +34,9 @@
 		0149CF3C2BB52507008BDD13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0149CF3E2BB52675008BDD13 /* CatalogueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueView.swift; sourceTree = "<group>"; };
 		0149CF402BB52C43008BDD13 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-SemiBold.ttf"; path = "noQ/Resources/Fonts/Poppins-SemiBold.ttf"; sourceTree = SOURCE_ROOT; };
+		0163438C2BB930270044FAD7 /* Catalogue-ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Catalogue-ProductCardView.swift"; sourceTree = "<group>"; };
+		0163438E2BB931EF0044FAD7 /* Catalogue-CategoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Catalogue-CategoryCardView.swift"; sourceTree = "<group>"; };
+		016343902BBA54B50044FAD7 /* Catalogue-CartCheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Catalogue-CartCheckoutView.swift"; sourceTree = "<group>"; };
 		2018A8AC2BB84CC20039D031 /* Basket-ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Basket-ProductCardView.swift"; sourceTree = "<group>"; };
 		2018A8AE2BB87A930039D031 /* PaymentOptModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentOptModalView.swift; sourceTree = "<group>"; };
 		2018A8B02BB9C4C70039D031 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -117,6 +123,9 @@
 				EF913A082BB4FE3A001453E3 /* noQApp.swift */,
 				EF913A0A2BB4FE3A001453E3 /* ContentView.swift */,
 				0149CF3E2BB52675008BDD13 /* CatalogueView.swift */,
+				0163438C2BB930270044FAD7 /* Catalogue-ProductCardView.swift */,
+				0163438E2BB931EF0044FAD7 /* Catalogue-CategoryCardView.swift */,
+				016343902BBA54B50044FAD7 /* Catalogue-CartCheckoutView.swift */,
 				20BFA0302BB799A1007899C5 /* BasketView.swift */,
 				EF14F8052BBA797D00789FD8 /* Component */,
 				2018A8AC2BB84CC20039D031 /* Basket-ProductCardView.swift */,
@@ -216,11 +225,14 @@
 				EF1FA6BF2BB887EB00A35097 /* OrderHistoryDetails.swift in Sources */,
 				EF9C4DF02BB8592B000E4439 /* OrderHistory.swift in Sources */,
 				2018A8B12BB9C4C70039D031 /* HomeView.swift in Sources */,
+				0163438F2BB931EF0044FAD7 /* Catalogue-CategoryCardView.swift in Sources */,
+				016343912BBA54B50044FAD7 /* Catalogue-CartCheckoutView.swift in Sources */,
 				EF913A0B2BB4FE3A001453E3 /* ContentView.swift in Sources */,
 				EF1FA6C12BBA474800A35097 /* Maps.swift in Sources */,
 				2018A8AD2BB84CC20039D031 /* Basket-ProductCardView.swift in Sources */,
 				EF913A0D2BB4FE3A001453E3 /* Item.swift in Sources */,
 				EF14F8092BBA7A5100789FD8 /* BackButton.swift in Sources */,
+				0163438D2BB930270044FAD7 /* Catalogue-ProductCardView.swift in Sources */,
 				2018A8AF2BB87A930039D031 /* PaymentOptModalView.swift in Sources */,
 				2018A8E92BBA775E0039D031 /* Constant.swift in Sources */,
 				0149CF3F2BB52675008BDD13 /* CatalogueView.swift in Sources */,

@@ -12,6 +12,74 @@ static let colorsBaseBlack: Color = .black
 static let borderRadiusDEFAULT: CGFloat = 4
 }
 
+private struct Product: Identifiable {
+    let imgSrc: String
+    let productName: String
+    let disc: String
+    let initPrice: String
+    let finPrice: String
+    var id: String { productName }
+}
+
+private let products: [Product] = [
+    Product(
+        imgSrc: "oreo",
+        productName: "Oreo Strawberry 160gr",
+        disc: "36%",
+        initPrice: "20,800",
+        finPrice: "10,800"
+    ),
+    Product(
+        imgSrc: "pocky",
+        productName: "Pocky Chocolate 80gr",
+        disc: "36%",
+        initPrice: "20,800",
+        finPrice: "10,800"
+    ),
+    Product(
+        imgSrc: "oreo",
+        productName: "Oreo Strawberry 160gr",
+        disc: "36%",
+        initPrice: "20,800",
+        finPrice: "10,800"
+    ),
+    Product(
+        imgSrc: "pocky",
+        productName: "Pocky Chocolate 80gr",
+        disc: "36%",
+        initPrice: "20,800",
+        finPrice: "10,800"
+    ),
+    Product(
+        imgSrc: "oreo",
+        productName: "Oreo Strawberry 160gr",
+        disc: "36%",
+        initPrice: "20,800",
+        finPrice: "10,800"
+    ),
+    Product(
+        imgSrc: "pocky",
+        productName: "Pocky Chocolate 80gr",
+        disc: "36%",
+        initPrice: "20,800",
+        finPrice: "10,800"
+    )
+]
+
+private struct Category: Identifiable {
+    let label: String
+    let discount: Bool
+    var id: String { label }
+}
+
+private let categories: [Category] = [
+    Category(label: "% Discount", discount:  true),
+    Category(label: "Fresh", discount:  false),
+    Category(label: "Snacks", discount:  false),
+    Category(label: "Drinks", discount:  false),
+    Category(label: "Micin", discount:  false)
+]
+
 struct CatalogueView: View {
     @Environment(\.dismiss) var dismiss
     
@@ -77,429 +145,24 @@ struct CatalogueView: View {
             
             ScrollView(.horizontal) {
                 HStack(spacing: 12) {
-                    HStack(alignment: .center, spacing: 10) {
-                        Text("% Discount")                      .font(Font.custom("Poppins-Regular", size: 14))
-                            .foregroundColor(Color(red: 1, green: 0.76, blue: 0.29))
+                    ForEach(categories) {category in
+                        Catalogue_CategoryCardView(label: category.label, discount:category.discount)
                     }
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 8)
-                    .background(Color(red: 1, green: 0.96, blue: 0.88))
-                    .cornerRadius(8)
-                    
-                    HStack(alignment: .center, spacing: 10) {
-                        Text("Fresh")                      .font(Font.custom("Poppins-Regular", size: 14))
-                            .foregroundColor(Color(red: 0.24, green: 0.27, blue: 0.4))
-                    }
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 8)
-                    .background(Color(red: 0.95, green: 0.96, blue: 0.99))
-                    .cornerRadius(8)
-                    
-                    HStack(alignment: .center, spacing: 10) {
-                        Text("Snacks")                      .font(Font.custom("Poppins-Regular", size: 14))
-                            .foregroundColor(Color(red: 0.24, green: 0.27, blue: 0.4))
-                    }
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 8)
-                    .background(Color(red: 0.95, green: 0.96, blue: 0.99))
-                    .cornerRadius(8)
-                    
-                    HStack(alignment: .center, spacing: 10) {
-                        Text("Drinks")                      .font(Font.custom("Poppins-Regular", size: 14))
-                    }
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 8)
-                    .background(Color(red: 0.95, green: 0.96, blue: 0.99))
-                    .cornerRadius(8)
-                    
-                    HStack(alignment: .center, spacing: 10) {
-                        Text("Micin")                      .font(Font.custom("Poppins-Regular", size: 14))
-                    }
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 8)
-                    .background(Color(red: 0.95, green: 0.96, blue: 0.99))
-                    .cornerRadius(8)
                 }
             }.foregroundColor(Color(red: 0.24, green: 0.27, blue: 0.4))
             
             ScrollView() {
-                HStack(alignment: .top, spacing: 16){
-                    VStack(alignment: .leading, spacing: 6){
-                        Image("oreo").resizable()
-                            .frame(width: 130.0, height: 130.0).padding(.horizontal, 28.5)
-                        // Sub-Header/S5
-                        Text("Oreo Strawberry 160gr")
-                            .font(
-                                Font.custom("Poppins-SemiBold", size: 14)
-                            )
-                            .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
-                        
-                        HStack{
-                            HStack(alignment: .top) {
-                                Text("36% off")
-                                    .font(
-                                        Font.custom("Poppins-Regular", size: 10)
-                                            .weight(.medium)
-                                    )
-                                    .foregroundColor(.white)
+                ForEach(products.indices,id: \.self) { i in
+                    if i.isMultiple(of: 2) {
+                        let isIndexValid = products.indices.contains(i+1)
+
+                        HStack(alignment: .top, spacing: 16){
+                            Catalogue_ProductCardView(imgSrc: products[i].imgSrc, productName: products[i].productName, disc: products[i].disc, initPrice: products[i].initPrice, finPrice: products[i].finPrice)
+                            if isIndexValid {
+                                Catalogue_ProductCardView(imgSrc: products[i+1].imgSrc, productName: products[i+1].productName, disc: products[i+1].disc, initPrice: products[i+1].initPrice, finPrice: products[i+1].finPrice)
                             }
-                            .padding(.horizontal, 4)
-                            .background(Color(red: 0.96, green: 0.25, blue: 0.37))
-                            .cornerRadius(Constants.borderRadiusDEFAULT)
-                            
-                            Text("Rp20,800")
-                                .font(Font.custom("Inter", size: 12))
-                                .strikethrough()
-                                .foregroundColor(Color(red: 0.69, green: 0.71, blue: 0.72))
                         }
-                        
-                        Text("Rp10,800")
-                          .font(
-                            Font.custom("Poppins-SemiBold", size: 14)
-                              .weight(.semibold)
-                          )
-                          .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
-                        
-                        HStack{
-                            HStack(alignment: .center, spacing: 8) { // Body/B4
-                                Text("Checkout")
-                                  .font(Font.custom("Poppins", size: 12))
-                                  .multilineTextAlignment(.center)
-                                  .foregroundColor(.white)
-                            }
-                            .padding(.horizontal, 16)
-                            .padding(.vertical, 8)
-                            .frame(maxWidth: .infinity, alignment: .center)
-                            .background(Color(red: 0.29, green: 0.8, blue: 0.89))
-                            .cornerRadius(8)
-                            
-                            HStack(alignment: .center, spacing: 8) { Image(systemName: "basket")
-                                .frame(width: 20, height: 20) }
-                            .padding(8)
-                            .background(Color(red: 1, green: 0.76, blue: 0.29))
-                            .cornerRadius(8)
-                        }
-                        
-                    }.padding(12).frame(width: 187, alignment: .leading).background(.white)           .cornerRadius(12).shadow(color: .black.opacity(0.05), radius: 3.5, x: 0, y: 4).overlay(
-                        RoundedRectangle(cornerRadius: 12)
-                          .inset(by: 0.5)
-                          .stroke(Color(red: 0.95, green: 0.96, blue: 0.99), lineWidth: 1)
-                      )
-                
-                    VStack(alignment: .leading, spacing: 6){
-                        Image("pocky").resizable()
-                            .frame(width: 130.0, height: 130.0).padding(.horizontal, 28.5)
-                        // Sub-Header/S5
-                        Text("Pocky Chocolate 80gr")
-                            .font(
-                                Font.custom("Poppins-SemiBold", size: 14)
-                            )
-                            .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
-                        
-                        HStack{
-                            HStack(alignment: .top) {
-                                Text("36% off")
-                                    .font(
-                                        Font.custom("Poppins-Regular", size: 10)
-                                            .weight(.medium)
-                                    )
-                                    .foregroundColor(.white)
-                            }
-                            .padding(.horizontal, 4)
-                            .background(Color(red: 0.96, green: 0.25, blue: 0.37))
-                            .cornerRadius(Constants.borderRadiusDEFAULT)
-                            
-                            Text("Rp20,800")
-                                .font(Font.custom("Inter", size: 12))
-                                .strikethrough()
-                                .foregroundColor(Color(red: 0.69, green: 0.71, blue: 0.72))
-                        }
-                        
-                        Text("Rp10,800")
-                          .font(
-                            Font.custom("Poppins-SemiBold", size: 14)
-                              .weight(.semibold)
-                          )
-                          .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
-                        
-                        HStack{
-                            HStack(alignment: .center, spacing: 8) { // Body/B4
-                                Text("Checkout")
-                                  .font(Font.custom("Poppins", size: 12))
-                                  .multilineTextAlignment(.center)
-                                  .foregroundColor(.white)
-                            }
-                            .padding(.horizontal, 16)
-                            .padding(.vertical, 8)
-                            .frame(maxWidth: .infinity, alignment: .center)
-                            .background(Color(red: 0.29, green: 0.8, blue: 0.89))
-                            .cornerRadius(8)
-                            
-                            HStack(alignment: .center, spacing: 8) { Image(systemName: "basket")
-                                .frame(width: 20, height: 20) }
-                            .padding(8)
-                            .background(Color(red: 1, green: 0.76, blue: 0.29))
-                            .cornerRadius(8)
-                        }
-                        
-                    }.padding(12).frame(width: 187, alignment: .leading).background(.white)           .cornerRadius(12).shadow(color: .black.opacity(0.05), radius: 3.5, x: 0, y: 4).overlay(
-                        RoundedRectangle(cornerRadius: 12)
-                          .inset(by: 0.5)
-                          .stroke(Color(red: 0.95, green: 0.96, blue: 0.99), lineWidth: 1)
-                      )
-                    
-                }
-                HStack(alignment: .top, spacing: 16){
-                    VStack(alignment: .leading, spacing: 6){
-                        Image("oreo").resizable()
-                            .frame(width: 130.0, height: 130.0).padding(.horizontal, 28.5)
-                        // Sub-Header/S5
-                        Text("Oreo Strawberry 160gr")
-                            .font(
-                                Font.custom("Poppins-SemiBold", size: 14)
-                            )
-                            .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
-                        
-                        HStack{
-                            HStack(alignment: .top) {
-                                Text("36% off")
-                                    .font(
-                                        Font.custom("Poppins-Regular", size: 10)
-                                            .weight(.medium)
-                                    )
-                                    .foregroundColor(.white)
-                            }
-                            .padding(.horizontal, 4)
-                            .background(Color(red: 0.96, green: 0.25, blue: 0.37))
-                            .cornerRadius(Constants.borderRadiusDEFAULT)
-                            
-                            Text("Rp20,800")
-                                .font(Font.custom("Inter", size: 12))
-                                .strikethrough()
-                                .foregroundColor(Color(red: 0.69, green: 0.71, blue: 0.72))
-                        }
-                        
-                        Text("Rp10,800")
-                          .font(
-                            Font.custom("Poppins-SemiBold", size: 14)
-                              .weight(.semibold)
-                          )
-                          .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
-                        
-                        HStack{
-                            HStack(alignment: .center, spacing: 8) { // Body/B4
-                                Text("Checkout")
-                                  .font(Font.custom("Poppins", size: 12))
-                                  .multilineTextAlignment(.center)
-                                  .foregroundColor(.white)
-                            }
-                            .padding(.horizontal, 16)
-                            .padding(.vertical, 8)
-                            .frame(maxWidth: .infinity, alignment: .center)
-                            .background(Color(red: 0.29, green: 0.8, blue: 0.89))
-                            .cornerRadius(8)
-                            
-                            HStack(alignment: .center, spacing: 8) { Image(systemName: "basket")
-                                .frame(width: 20, height: 20) }
-                            .padding(8)
-                            .background(Color(red: 1, green: 0.76, blue: 0.29))
-                            .cornerRadius(8)
-                        }
-                        
-                    }.padding(12).frame(width: 187, alignment: .leading).background(.white)           .cornerRadius(12).shadow(color: .black.opacity(0.05), radius: 3.5, x: 0, y: 4).overlay(
-                        RoundedRectangle(cornerRadius: 12)
-                          .inset(by: 0.5)
-                          .stroke(Color(red: 0.95, green: 0.96, blue: 0.99), lineWidth: 1)
-                      )
-                
-                    VStack(alignment: .leading, spacing: 6){
-                        Image("pocky").resizable()
-                            .frame(width: 130.0, height: 130.0).padding(.horizontal, 28.5)
-                        // Sub-Header/S5
-                        Text("Pocky Chocolate 80gr")
-                            .font(
-                                Font.custom("Poppins-SemiBold", size: 14)
-                            )
-                            .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
-                        
-                        HStack{
-                            HStack(alignment: .top) {
-                                Text("36% off")
-                                    .font(
-                                        Font.custom("Poppins-Regular", size: 10)
-                                            .weight(.medium)
-                                    )
-                                    .foregroundColor(.white)
-                            }
-                            .padding(.horizontal, 4)
-                            .background(Color(red: 0.96, green: 0.25, blue: 0.37))
-                            .cornerRadius(Constants.borderRadiusDEFAULT)
-                            
-                            Text("Rp20,800")
-                                .font(Font.custom("Inter", size: 12))
-                                .strikethrough()
-                                .foregroundColor(Color(red: 0.69, green: 0.71, blue: 0.72))
-                        }
-                        
-                        Text("Rp10,800")
-                          .font(
-                            Font.custom("Poppins-SemiBold", size: 14)
-                              .weight(.semibold)
-                          )
-                          .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
-                        
-                        HStack{
-                            HStack(alignment: .center, spacing: 8) { // Body/B4
-                                Text("Checkout")
-                                  .font(Font.custom("Poppins", size: 12))
-                                  .multilineTextAlignment(.center)
-                                  .foregroundColor(.white)
-                            }
-                            .padding(.horizontal, 16)
-                            .padding(.vertical, 8)
-                            .frame(maxWidth: .infinity, alignment: .center)
-                            .background(Color(red: 0.29, green: 0.8, blue: 0.89))
-                            .cornerRadius(8)
-                            
-                            HStack(alignment: .center, spacing: 8) { Image(systemName: "basket")
-                                .frame(width: 20, height: 20) }
-                            .padding(8)
-                            .background(Color(red: 1, green: 0.76, blue: 0.29))
-                            .cornerRadius(8)
-                        }
-                        
-                    }.padding(12).frame(width: 187, alignment: .leading).background(.white)           .cornerRadius(12).shadow(color: .black.opacity(0.05), radius: 3.5, x: 0, y: 4).overlay(
-                        RoundedRectangle(cornerRadius: 12)
-                          .inset(by: 0.5)
-                          .stroke(Color(red: 0.95, green: 0.96, blue: 0.99), lineWidth: 1)
-                      )
-                    
-                }
-                HStack(alignment: .top, spacing: 16){
-                    VStack(alignment: .leading, spacing: 6){
-                        Image("oreo").resizable()
-                            .frame(width: 130.0, height: 130.0).padding(.horizontal, 28.5)
-                        // Sub-Header/S5
-                        Text("Oreo Strawberry 160gr")
-                            .font(
-                                Font.custom("Poppins-SemiBold", size: 14)
-                            )
-                            .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
-                        
-                        HStack{
-                            HStack(alignment: .top) {
-                                Text("36% off")
-                                    .font(
-                                        Font.custom("Poppins-Regular", size: 10)
-                                            .weight(.medium)
-                                    )
-                                    .foregroundColor(.white)
-                            }
-                            .padding(.horizontal, 4)
-                            .background(Color(red: 0.96, green: 0.25, blue: 0.37))
-                            .cornerRadius(Constants.borderRadiusDEFAULT)
-                            
-                            Text("Rp20,800")
-                                .font(Font.custom("Inter", size: 12))
-                                .strikethrough()
-                                .foregroundColor(Color(red: 0.69, green: 0.71, blue: 0.72))
-                        }
-                        
-                        Text("Rp10,800")
-                          .font(
-                            Font.custom("Poppins-SemiBold", size: 14)
-                              .weight(.semibold)
-                          )
-                          .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
-                        
-                        HStack{
-                            HStack(alignment: .center, spacing: 8) { // Body/B4
-                                Text("Checkout")
-                                  .font(Font.custom("Poppins", size: 12))
-                                  .multilineTextAlignment(.center)
-                                  .foregroundColor(.white)
-                            }
-                            .padding(.horizontal, 16)
-                            .padding(.vertical, 8)
-                            .frame(maxWidth: .infinity, alignment: .center)
-                            .background(Color(red: 0.29, green: 0.8, blue: 0.89))
-                            .cornerRadius(8)
-                            
-                            HStack(alignment: .center, spacing: 8) { Image(systemName: "basket")
-                                .frame(width: 20, height: 20) }
-                            .padding(8)
-                            .background(Color(red: 1, green: 0.76, blue: 0.29))
-                            .cornerRadius(8)
-                        }
-                        
-                    }.padding(12).frame(width: 187, alignment: .leading).background(.white)           .cornerRadius(12).shadow(color: .black.opacity(0.05), radius: 3.5, x: 0, y: 4).overlay(
-                        RoundedRectangle(cornerRadius: 12)
-                          .inset(by: 0.5)
-                          .stroke(Color(red: 0.95, green: 0.96, blue: 0.99), lineWidth: 1)
-                      )
-                
-                    VStack(alignment: .leading, spacing: 6){
-                        Image("pocky").resizable()
-                            .frame(width: 130.0, height: 130.0).padding(.horizontal, 28.5)
-                        // Sub-Header/S5
-                        Text("Pocky Chocolate 80gr")
-                            .font(
-                                Font.custom("Poppins-SemiBold", size: 14)
-                            )
-                            .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
-                        
-                        HStack{
-                            HStack(alignment: .top) {
-                                Text("36% off")
-                                    .font(
-                                        Font.custom("Poppins-Regular", size: 10)
-                                            .weight(.medium)
-                                    )
-                                    .foregroundColor(.white)
-                            }
-                            .padding(.horizontal, 4)
-                            .background(Color(red: 0.96, green: 0.25, blue: 0.37))
-                            .cornerRadius(Constants.borderRadiusDEFAULT)
-                            
-                            Text("Rp20,800")
-                                .font(Font.custom("Inter", size: 12))
-                                .strikethrough()
-                                .foregroundColor(Color(red: 0.69, green: 0.71, blue: 0.72))
-                        }
-                        
-                        Text("Rp10,800")
-                          .font(
-                            Font.custom("Poppins-SemiBold", size: 14)
-                              .weight(.semibold)
-                          )
-                          .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
-                        
-                        HStack{
-                            HStack(alignment: .center, spacing: 8) { // Body/B4
-                                Text("Checkout")
-                                  .font(Font.custom("Poppins", size: 12))
-                                  .multilineTextAlignment(.center)
-                                  .foregroundColor(.white)
-                            }
-                            .padding(.horizontal, 16)
-                            .padding(.vertical, 8)
-                            .frame(maxWidth: .infinity, alignment: .center)
-                            .background(Color(red: 0.29, green: 0.8, blue: 0.89))
-                            .cornerRadius(8)
-                            
-                            HStack(alignment: .center, spacing: 8) { Image(systemName: "basket")
-                                .frame(width: 20, height: 20) }
-                            .padding(8)
-                            .background(Color(red: 1, green: 0.76, blue: 0.29))
-                            .cornerRadius(8)
-                        }
-                        
-                    }.padding(12).frame(width: 187, alignment: .leading).background(.white)           .cornerRadius(12).shadow(color: .black.opacity(0.05), radius: 3.5, x: 0, y: 4).overlay(
-                        RoundedRectangle(cornerRadius: 12)
-                          .inset(by: 0.5)
-                          .stroke(Color(red: 0.95, green: 0.96, blue: 0.99), lineWidth: 1)
-                      )
-                    
+                    }
                 }
             }.foregroundColor(Color(red: 0.24, green: 0.27, blue: 0.4))
             
