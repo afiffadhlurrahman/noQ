@@ -22,7 +22,8 @@ struct BasketView: View {
 
         VStack(spacing: 19) {
             HStack{
-                Image(systemName: "chevron.left").font(.system(size: 24))
+
+                BackButton()
                 Spacer()
                 // Sub-Header/S3
                 Text("Sigit's Basket")
@@ -95,6 +96,7 @@ struct BasketView: View {
             }
         }
         .padding(.horizontal, 20)
+        .navigationBarBackButtonHidden(true)
 
 
     }

@@ -66,10 +66,10 @@ struct HomeView: View {
                                             }
                                         ).overlay(
                                             RoundedRectangle(cornerRadius: 12)
-                                            .inset(by: 0.5)
-                                            .stroke(Color(red: 0.95, green: 0.96, blue: 0.99), lineWidth: 1)
+                                                .inset(by: 0.5)
+                                                .stroke(Color(red: 0.95, green: 0.96, blue: 0.99), lineWidth: 1)
 
-                                            )
+                                        )
 
                                     RoundedRectangle(cornerRadius: 12)
                                         .foregroundColor(.white)
@@ -85,10 +85,10 @@ struct HomeView: View {
                                         )
                                         .overlay(
                                             RoundedRectangle(cornerRadius: 12)
-                                            .inset(by: 0.5)
-                                            .stroke(Color(red: 0.95, green: 0.96, blue: 0.99), lineWidth: 1)
+                                                .inset(by: 0.5)
+                                                .stroke(Color(red: 0.95, green: 0.96, blue: 0.99), lineWidth: 1)
 
-                                            )
+                                        )
 
                                     RoundedRectangle(cornerRadius: 12)
                                         .foregroundColor(.white)
@@ -104,10 +104,10 @@ struct HomeView: View {
                                         )
                                         .overlay(
                                             RoundedRectangle(cornerRadius: 12)
-                                            .inset(by: 0.5)
-                                            .stroke(Color(red: 0.95, green: 0.96, blue: 0.99), lineWidth: 1)
+                                                .inset(by: 0.5)
+                                                .stroke(Color(red: 0.95, green: 0.96, blue: 0.99), lineWidth: 1)
 
-                                            )
+                                        )
 
                                     RoundedRectangle(cornerRadius: 12)
                                         .foregroundColor(.white)
@@ -122,10 +122,10 @@ struct HomeView: View {
                                         )
                                         .overlay(
                                             RoundedRectangle(cornerRadius: 12)
-                                            .inset(by: 0.5)
-                                            .stroke(Color(red: 0.95, green: 0.96, blue: 0.99), lineWidth: 1)
+                                                .inset(by: 0.5)
+                                                .stroke(Color(red: 0.95, green: 0.96, blue: 0.99), lineWidth: 1)
 
-                                            )
+                                        )
 
                                 }
 
@@ -396,20 +396,54 @@ struct HomeView: View {
                 .background(Color(red: 0.98, green: 0.98, blue: 1))
 
                 VStack {
-                    VStack(alignment: .leading, spacing: 4){
-                        HStack(spacing: 4){
-                            Image(systemName: "storefront").font(.system(size: 16))
-                            Text("Lawson Syahdan").font( Font.custom("poppins",size:10))
-                        }.foregroundColor(Color(red:84/255, green:86/255, blue:88/255))
-                        HStack(spacing: 8) {
-                            Text("Lawson Syahdan").font(Font.custom("Poppins", size: 16)).fontWeight(.bold)
-                            Image(systemName: "chevron.down").font(.system(size: 16))
-                        }
+                    HStack {
+                        VStack(alignment: .leading, spacing: 4){
+                            HStack(spacing: 4){
+                                Image(systemName: "storefront").font(.system(size: 16))
+                                Text("Lawson Syahdan").font( Font.custom("poppins",size:10))
+                            }.foregroundColor(.white)
+                            HStack(spacing: 8) {
+                                Text("Lawson Syahdan").font(Font.custom("Poppins", size: 16)).fontWeight(.bold)
+                                Image(systemName: "chevron.down").font(.system(size: 16))
+                            }.foregroundColor(.white)
 
+                        }
+                        .padding(12)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+
+                        HStack {
+                            NavigationLink(destination: BasketView()) {
+                                ZStack {
+                                Image(systemName: "basket")
+                                    .foregroundColor(Color(red: 0.69, green: 0.71, blue: 0.72))
+                                    .frame(width: 20, height: 20)
+                                    .padding(6)
+                                    .background(.white)
+                                    .cornerRadius(100)
+                                    Circle().frame(width: 8).foregroundStyle(Color(red: 1, green: 0.42, blue: 0)).offset(x:8, y:-3)
+                                }
+                            }
+
+                            NavigationLink(destination: OrderHistory()) {
+                            Image(systemName: "doc.plaintext")
+                                .foregroundColor(Color(red: 0.69, green: 0.71, blue: 0.72))
+                                .frame(width: 20, height: 20)
+                                .padding(6)
+                                .background(.white)
+                                .cornerRadius(100)
+                            }
+
+                            Image(systemName: "person.crop.circle")
+                                .foregroundColor(Color(red: 0.69, green: 0.71, blue: 0.72))
+                                .frame(width: 20, height: 20)
+                                .padding(6)
+                                .background(.white)
+                                .cornerRadius(100)
+                        }
                     }
-                    .padding(12)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+
                     Spacer()
+
                     HStack{
                         HStack(alignment: .center, spacing: 10) {
                             Text("Banana Milk")
