@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var searchKeyword: String = ""
+
     var body: some View {
         NavigationView {
             ZStack {
@@ -414,23 +416,23 @@ struct HomeView: View {
                         HStack {
                             NavigationLink(destination: BasketView()) {
                                 ZStack {
-                                Image(systemName: "basket")
-                                    .foregroundColor(Color(red: 0.69, green: 0.71, blue: 0.72))
-                                    .frame(width: 20, height: 20)
-                                    .padding(6)
-                                    .background(.white)
-                                    .cornerRadius(100)
+                                    Image(systemName: "basket")
+                                        .foregroundColor(Color(red: 0.69, green: 0.71, blue: 0.72))
+                                        .frame(width: 20, height: 20)
+                                        .padding(6)
+                                        .background(.white)
+                                        .cornerRadius(100)
                                     Circle().frame(width: 8).foregroundStyle(Color(red: 1, green: 0.42, blue: 0)).offset(x:8, y:-3)
                                 }
                             }
 
                             NavigationLink(destination: OrderHistory()) {
-                            Image(systemName: "doc.plaintext")
-                                .foregroundColor(Color(red: 0.69, green: 0.71, blue: 0.72))
-                                .frame(width: 20, height: 20)
-                                .padding(6)
-                                .background(.white)
-                                .cornerRadius(100)
+                                Image(systemName: "doc.plaintext")
+                                    .foregroundColor(Color(red: 0.69, green: 0.71, blue: 0.72))
+                                    .frame(width: 20, height: 20)
+                                    .padding(6)
+                                    .background(.white)
+                                    .cornerRadius(100)
                             }
 
                             Image(systemName: "person.crop.circle")
@@ -445,12 +447,13 @@ struct HomeView: View {
                     Spacer()
 
                     HStack{
-                        HStack(alignment: .center, spacing: 10) {
-                            Text("Banana Milk")
-                                .font(Font.custom("Poppins-Regular", size: 14))
-                                .foregroundColor(Constants.colorsBaseBlack)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                        }
+
+                        TextField("",
+                                  text:$searchKeyword
+                        )
+                        .font(Font.custom("Poppins-Regular", size: 14))
+                        .foregroundColor(Constants.colorsBaseBlack)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.horizontal, 16)
                         .padding(.vertical, 12)
                         .frame(maxWidth: .infinity, alignment: .leading)
