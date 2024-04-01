@@ -13,10 +13,14 @@ static let borderRadiusDEFAULT: CGFloat = 4
 }
 
 struct CatalogueView: View {
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         VStack(spacing: 16) {
             HStack{
-                Image(systemName: "chevron.left").font(.system(size: 24))
+                Image(systemName: "chevron.left").font(.system(size: 24)).onTapGesture(perform: {
+                        dismiss()
+                })
                 Spacer()
                 // Sub-Header/S3
                 Text("Catalogue")
@@ -501,7 +505,8 @@ struct CatalogueView: View {
             
             Spacer() /// forces content to top
         }.padding(.horizontal, 20).padding(.vertical, 16)
-        
+            .navigationBarBackButtonHidden(true)
+
     }
 }
 
