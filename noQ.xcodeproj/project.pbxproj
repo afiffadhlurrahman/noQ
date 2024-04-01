@@ -19,6 +19,7 @@
 		2018A8AF2BB87A930039D031 /* PaymentOptModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018A8AE2BB87A930039D031 /* PaymentOptModalView.swift */; };
 		2018A8B12BB9C4C70039D031 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018A8B02BB9C4C70039D031 /* HomeView.swift */; };
 		2018A8E92BBA775E0039D031 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018A8E82BBA775E0039D031 /* Constant.swift */; };
+		203F29072BBAEB580068D08E /* CategoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203F29062BBAEB580068D08E /* CategoryCardView.swift */; };
 		20BFA0312BB799A1007899C5 /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BFA0302BB799A1007899C5 /* BasketView.swift */; };
 		EF14F8092BBA7A5100789FD8 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF14F8082BBA7A5100789FD8 /* BackButton.swift */; };
 		EF1FA6BF2BB887EB00A35097 /* OrderHistoryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1FA6BE2BB887EB00A35097 /* OrderHistoryDetails.swift */; };
@@ -29,6 +30,9 @@
 		EF913A0F2BB4FE3B001453E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF913A0E2BB4FE3B001453E3 /* Assets.xcassets */; };
 		EF913A122BB4FE3B001453E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF913A112BB4FE3B001453E3 /* Preview Assets.xcassets */; };
 		EF9C4DF02BB8592B000E4439 /* OrderHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4DEF2BB8592B000E4439 /* OrderHistory.swift */; };
+		F599E2A72BBA97D3005D627D /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F599E2A62BBA97D3005D627D /* LogIn.swift */; };
+		F599E2A92BBAB355005D627D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F599E2A82BBAB355005D627D /* SignUpView.swift */; };
+		F599E2AB2BBAC322005D627D /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F599E2AA2BBAC322005D627D /* LandingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +49,7 @@
 		2018A8AE2BB87A930039D031 /* PaymentOptModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentOptModalView.swift; sourceTree = "<group>"; };
 		2018A8B02BB9C4C70039D031 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2018A8E82BBA775E0039D031 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		203F29062BBAEB580068D08E /* CategoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardView.swift; sourceTree = "<group>"; };
 		20BFA0302BB799A1007899C5 /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BasketView.swift; path = noQ/BasketView.swift; sourceTree = SOURCE_ROOT; };
 		EF14F8082BBA7A5100789FD8 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		EF1FA6BE2BB887EB00A35097 /* OrderHistoryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryDetails.swift; sourceTree = "<group>"; };
@@ -56,6 +61,9 @@
 		EF913A0E2BB4FE3B001453E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF913A112BB4FE3B001453E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EF9C4DEF2BB8592B000E4439 /* OrderHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistory.swift; sourceTree = "<group>"; };
+		F599E2A62BBA97D3005D627D /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
+		F599E2A82BBAB355005D627D /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		F599E2AA2BBAC322005D627D /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,11 +143,15 @@
 				016343AD2BBAC36B0044FAD7 /* ProductDetailView.swift */,
 				EF14F8052BBA797D00789FD8 /* Component */,
 				2018A8AC2BB84CC20039D031 /* Basket-ProductCardView.swift */,
+				F599E2A62BBA97D3005D627D /* LogIn.swift */,
+				F599E2A82BBAB355005D627D /* SignUpView.swift */,
+				F599E2AA2BBAC322005D627D /* LandingView.swift */,
 				2018A8AE2BB87A930039D031 /* PaymentOptModalView.swift */,
 				EF9C4DEF2BB8592B000E4439 /* OrderHistory.swift */,
 				EF1FA6BE2BB887EB00A35097 /* OrderHistoryDetails.swift */,
 				EF913A0C2BB4FE3A001453E3 /* Item.swift */,
 				2018A8B02BB9C4C70039D031 /* HomeView.swift */,
+				203F29062BBAEB580068D08E /* CategoryCardView.swift */,
 				EF1FA6C02BBA474800A35097 /* Maps.swift */,
 				EF913A0E2BB4FE3B001453E3 /* Assets.xcassets */,
 				EF913A102BB4FE3B001453E3 /* Preview Content */,
@@ -228,9 +240,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				20BFA0312BB799A1007899C5 /* BasketView.swift in Sources */,
+				F599E2AB2BBAC322005D627D /* LandingView.swift in Sources */,
 				EF1FA6BF2BB887EB00A35097 /* OrderHistoryDetails.swift in Sources */,
+				F599E2A72BBA97D3005D627D /* LogIn.swift in Sources */,
 				EF9C4DF02BB8592B000E4439 /* OrderHistory.swift in Sources */,
 				016343AE2BBAC36B0044FAD7 /* ProductDetailView.swift in Sources */,
+				F599E2A92BBAB355005D627D /* SignUpView.swift in Sources */,
 				2018A8B12BB9C4C70039D031 /* HomeView.swift in Sources */,
 				0163438F2BB931EF0044FAD7 /* Catalogue-CategoryCardView.swift in Sources */,
 				016343912BBA54B50044FAD7 /* Catalogue-CartCheckoutView.swift in Sources */,
@@ -239,6 +254,7 @@
 				2018A8AD2BB84CC20039D031 /* Basket-ProductCardView.swift in Sources */,
 				016343B02BBAC3B80044FAD7 /* Header.swift in Sources */,
 				EF913A0D2BB4FE3A001453E3 /* Item.swift in Sources */,
+				203F29072BBAEB580068D08E /* CategoryCardView.swift in Sources */,
 				EF14F8092BBA7A5100789FD8 /* BackButton.swift in Sources */,
 				0163438D2BB930270044FAD7 /* Catalogue-ProductCardView.swift in Sources */,
 				2018A8AF2BB87A930039D031 /* PaymentOptModalView.swift in Sources */,
