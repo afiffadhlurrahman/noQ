@@ -29,6 +29,7 @@
 		EF1C2A9A2BBC457900CFB30E /* animasi jam stretch_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = EF1C2A962BBC457900CFB30E /* animasi jam stretch_1.gif */; };
 		EF1C2A9B2BBC457900CFB30E /* animasi lari stretch_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = EF1C2A972BBC457900CFB30E /* animasi lari stretch_1.gif */; };
 		EF1C2A9C2BBC457900CFB30E /* animasi pick up_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = EF1C2A982BBC457900CFB30E /* animasi pick up_1.gif */; };
+		EF1C2AA02BBC46A700CFB30E /* splashscreen.gif in Resources */ = {isa = PBXBuildFile; fileRef = EF1C2A9F2BBC46A700CFB30E /* splashscreen.gif */; };
 		EF1FA6BF2BB887EB00A35097 /* OrderHistoryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1FA6BE2BB887EB00A35097 /* OrderHistoryDetails.swift */; };
 		EF1FA6C12BBA474800A35097 /* Maps.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1FA6C02BBA474800A35097 /* Maps.swift */; };
 		EF8907BF2BBBC43B00C2DCA9 /* animasi-jam.gif in Resources */ = {isa = PBXBuildFile; fileRef = EF8907BE2BBBC43B00C2DCA9 /* animasi-jam.gif */; };
@@ -69,6 +70,7 @@
 		EF1C2A962BBC457900CFB30E /* animasi jam stretch_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animasi jam stretch_1.gif"; sourceTree = "<group>"; };
 		EF1C2A972BBC457900CFB30E /* animasi lari stretch_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animasi lari stretch_1.gif"; sourceTree = "<group>"; };
 		EF1C2A982BBC457900CFB30E /* animasi pick up_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animasi pick up_1.gif"; sourceTree = "<group>"; };
+		EF1C2A9F2BBC46A700CFB30E /* splashscreen.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = splashscreen.gif; sourceTree = "<group>"; };
 		EF1FA6BE2BB887EB00A35097 /* OrderHistoryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryDetails.swift; sourceTree = "<group>"; };
 		EF1FA6C02BBA474800A35097 /* Maps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
 		EF8907BE2BBBC43B00C2DCA9 /* animasi-jam.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "animasi-jam.gif"; path = "../../../../../Downloads/animasi-jam.gif"; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				EF1C2A962BBC457900CFB30E /* animasi jam stretch_1.gif */,
 				EF1C2A972BBC457900CFB30E /* animasi lari stretch_1.gif */,
 				EF1C2A982BBC457900CFB30E /* animasi pick up_1.gif */,
+				EF1C2A9F2BBC46A700CFB30E /* splashscreen.gif */,
 			);
 			name = "Animations-GIF";
 			path = "../../../../Downloads/Animations-GIF/Animations-GIF";
@@ -288,6 +291,7 @@
 				EF913A0F2BB4FE3B001453E3 /* Assets.xcassets in Resources */,
 				0149CF422BB52D9D008BDD13 /* Poppins-Regular.ttf in Resources */,
 				EF1C2A9C2BBC457900CFB30E /* animasi pick up_1.gif in Resources */,
+				EF1C2AA02BBC46A700CFB30E /* splashscreen.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

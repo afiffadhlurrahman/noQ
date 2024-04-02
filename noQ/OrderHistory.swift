@@ -12,7 +12,7 @@ struct OrderHistory: View {
         NavigationView{
             VStack(spacing: 16){
                 HStack{
-                    Image(systemName: "chevron.left").font(.system(size: 24))
+                    BackButton()
                     Spacer()
                     // Sub-Header/S3
                     Text("Order History")
@@ -254,7 +254,9 @@ struct OrderHistory: View {
                         // End Order 3
                     }
                 }
-            }.padding(.horizontal, 20).padding(.vertical, 16)
+            }
+            .padding(.horizontal, 20).padding(.vertical, 16)
+            .navigationBarBackButtonHidden(true)
         }
     }
 }

@@ -114,7 +114,6 @@ struct HomeView: View {
                             }
                             
                         }
-                        .frame(height: .infinity)
                         .padding(.top, 60)
                         
                         VStack(alignment: .leading, spacing: 12) {
