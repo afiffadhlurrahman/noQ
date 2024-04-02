@@ -13,7 +13,7 @@ struct SplashScreen: View {
     var body: some View {
         ZStack {
               if self.isActive {
-                  HomeView()
+                  LandingView()
               } else {
                   GeometryReader { 
                       geometry in
