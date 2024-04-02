@@ -14,6 +14,7 @@ struct SignUpView: View {
     @State private var password: String = ""
     @State private var passwordConf: String = ""
     @State var isShowingPassword: Bool = false
+    @State var isShowingPasswordConf: Bool = false
     @FocusState var isFieldFocus: FieldToFocus?
     
     
@@ -99,51 +100,73 @@ struct SignUpView: View {
                                 )
                         }
                         
-                        VStack(alignment: .leading){
-                            Text("Password")
-                              .font(Font.custom("Poppins", size: 14))
-                              .multilineTextAlignment(.center)
-                              .foregroundColor(Color(red: 0.33, green: 0.34, blue: 0.35))
-                            SecureField(text: $password, prompt: Text("Your Password")) {
-                                Text("Username")
-                            }.padding(16)
-                                .cornerRadius(14)
-                                .overlay(
-                                RoundedRectangle(cornerRadius: 14)
-                                .inset(by: 0.5)
-                                .stroke(Color(red: 0.69, green: 0.71, blue: 0.72), lineWidth: 1)
-                                )
-                            
-                        }
                         
-                        VStack(alignment: .leading){
-                            Text("Confirm Your Password")
-                              .font(Font.custom("Poppins", size: 14))
-                              .multilineTextAlignment(.center)
-                              .foregroundColor(Color(red: 0.33, green: 0.34, blue: 0.35))
-                            SecureField(text: $passwordConf, prompt: Text("Your Password")) {
-                                Text("Username")
-                            }.padding(16)
-                                .cornerRadius(14)
-                                .overlay(
-                                RoundedRectangle(cornerRadius: 14)
-                                .inset(by: 0.5)
-                                .stroke(Color(red: 0.69, green: 0.71, blue: 0.72), lineWidth: 1)
-                                )
-                        }
-                        
-                        // Hide & Show
-                        ZStack(alignment: .center){
+                        // Password
                             VStack(alignment: .leading){
                                 Text("Password")
                                     .font(Font.custom("Poppins", size: 14))
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color(red: 0.33, green: 0.34, blue: 0.35))
                                 
+                                ZStack{
+                                    Group {
+                                        if isShowingPassword {
+                                            VStack(alignment: .leading){
+                                                TextField(text: $password, prompt: Text("Your Password")) {
+                                                }.padding(16)
+                                                    .cornerRadius(14)
+                                                    .overlay(
+                                                        RoundedRectangle(cornerRadius: 14)
+                                                            .inset(by: 0.5)
+                                                            .stroke(Color(red: 0.69, green: 0.71, blue: 0.72), lineWidth: 1)
+                                                    )
+                                            }
+                                        }else {
+                                            VStack(alignment: .leading){
+                                                SecureField("Your Password", text: $password)
+                                                    .focused($isFieldFocus, equals: .secureField).padding(16)
+                                                    .cornerRadius(14)
+                                                    .overlay(
+                                                        RoundedRectangle(cornerRadius: 14)
+                                                            .inset(by: 0.5)
+                                                            .stroke(Color(red: 0.69, green: 0.71, blue: 0.72), lineWidth: 1)
+                                                    )
+                                            }
+                                        }
+                                    }
+                                    .disableAutocorrection(true)
+                                    .autocapitalization(.none)
+                                    
+                                    HStack{
+                                        Spacer()
+                                        Button {
+                                            isShowingPassword.toggle()
+                                        }label: {
+                                            if isShowingPassword {
+                                                Image(systemName:"eye.slash")
+                                                    .foregroundColor(Color(red: 0.29, green: 0.8, blue: 0.89))
+                                            }else {
+                                                Image(systemName:"eye").foregroundColor(Color(red: 0.29, green: 0.8, blue: 0.89))
+                                            }
+                                        }
+                                        
+                                    }.padding(20)
+                                }
+                            
+                        }
+                        
+                        // Confirm Password
+                        VStack(alignment: .leading){
+                            Text("Confirm Your Password")
+                                .font(Font.custom("Poppins", size: 14))
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color(red: 0.33, green: 0.34, blue: 0.35))
+                            
+                            ZStack{
                                 Group {
-                                    if isShowingPassword {
+                                    if isShowingPasswordConf {
                                         VStack(alignment: .leading){
-                                            TextField(text: $password, prompt: Text("Your Password")) {
+                                            TextField(text: $passwordConf, prompt: Text("Your Password")) {
                                             }.padding(16)
                                                 .cornerRadius(14)
                                                 .overlay(
@@ -154,7 +177,7 @@ struct SignUpView: View {
                                         }
                                     }else {
                                         VStack(alignment: .leading){
-                                            SecureField("Your Password", text: $password)
+                                            SecureField("Your Password", text: $passwordConf)
                                                 .focused($isFieldFocus, equals: .secureField).padding(16)
                                                 .cornerRadius(14)
                                                 .overlay(
@@ -167,21 +190,27 @@ struct SignUpView: View {
                                 }
                                 .disableAutocorrection(true)
                                 .autocapitalization(.none)
-                            
-                        }
-                        
-                        
-                            
-                            Button {
-                                isShowingPassword.toggle()
-                            }label: {
-                                if isShowingPassword {
-                                    Text("Hide")
-                                }else {
-                                    Text("Show")
-                                }
+                                
+                                HStack{
+                                    Spacer()
+                                    Button {
+                                        isShowingPasswordConf.toggle()
+                                    }label: {
+                                        if isShowingPasswordConf {
+                                            Image(systemName:"eye.slash")
+                                                .foregroundColor(Color(red: 0.29, green: 0.8, blue: 0.89))
+                                        }else {
+                                            Image(systemName:"eye").foregroundColor(Color(red: 0.29, green: 0.8, blue: 0.89))
+                                        }
+                                    }
+                                    
+                                }.padding(20)
                             }
-                        }
+                        
+                    }
+                        
+                        
+                        
                     
                     }
                     
