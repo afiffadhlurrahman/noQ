@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct OrderHistory: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
     var body: some View {
         NavigationView{
             VStack(spacing: 16){
                 HStack{
                     Image(systemName: "chevron.left").font(.system(size: 24))
+                        .onTapGesture (perform: {
+                            self.presentationMode.wrappedValue.dismiss()
+                        })
                     Spacer()
                     // Sub-Header/S3
                     Text("Order History")
@@ -254,8 +259,9 @@ struct OrderHistory: View {
                         // End Order 3
                     }
                 }
-            }.padding(.horizontal, 20).padding(.vertical, 16)
-        }
+            }
+            .padding(.horizontal, 20).padding(.vertical, 16)
+        }.navigationBarBackButtonHidden(true)
     }
 }
 

@@ -9,10 +9,12 @@ import SwiftUI
 
 struct BackButton: View {
     @Environment(\.dismiss) var backbutton
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
     var body: some View {
         Image(systemName: "chevron.left").font(.system(size: 24))
             .onTapGesture (perform: {
-                backbutton()
+                self.presentationMode.wrappedValue.dismiss()
             })
                 
     }
