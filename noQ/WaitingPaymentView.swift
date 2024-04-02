@@ -9,8 +9,10 @@ import SwiftUI
 import AVKit
 
 struct WaitingPaymentView: View {
+    @Environment(\.dismiss) var backbutton
+
     var videoURL: URL? {
-        Bundle.main.url(forResource: "animasi-jam", withExtension: "mp4")
+        Bundle.main.url(forResource: "jam", withExtension: "mp4")
     }
 
     let externalVideoURL = URL(string: "https://www.example.com/path/to/your/video.mp4")
@@ -18,20 +20,18 @@ struct WaitingPaymentView: View {
     var body: some View {
         NavigationView{
             VStack {
-                //                if let videoURL = videoURL {
-                //                                    VideoPlayer(player: AVPlayer(url: videoURL))
-                //                                } else {
-                //                                    Text("Failed to load video")
-                //                                }
+                ZStack(alignment: .topLeading) {
+                    GifImage("jam")
+                    Text("Back")
+                        .font(Font.custom("Poppins-Semibold", size: 14))
+                        .foregroundStyle(.white)
+                        .onTapGesture (perform: {
+                            backbutton()
+                        })
+                        .padding(.horizontal, 20)
+                }
+                .background(Color(red: 0.96, green: 0.83, blue: 0.51))
 
-                //                if let externalVideoURL = externalVideoURL {
-                //                                  VideoPlayer(player: AVPlayer(url: externalVideoURL))
-                //                              } else {
-                //                                  Text("Failed to load video")
-                //                              }
-
-                Text("Animasi")
-                Header(title: "")
                 ScrollView {
                     VStack (spacing: 24){
                         VStack {
@@ -137,9 +137,10 @@ struct WaitingPaymentView: View {
 
                     }
                 }
-                Spacer()
+                .padding(.horizontal, 20)
+                .padding(.vertical,0)
+                .frame(maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
             }
-            .padding(.horizontal, 20)
         }
 
     }
