@@ -9,18 +9,26 @@ import SwiftUI
 import AVKit
 
 struct WaitingPaymentView: View {
-//    var animationURL: URL? {
-//          Bundle.main.url(forResource: "animasi-jam", withExtension: "MP4")
-//      }
+    var videoURL: URL? {
+        Bundle.main.url(forResource: "animasi-jam", withExtension: "mp4")
+    }
 
-
+    let externalVideoURL = URL(string: "https://www.example.com/path/to/your/video.mp4")
 
     var body: some View {
         NavigationView{
             VStack {
-//                if let url = animationURL {
-//                                  VideoPlayer(player: AVPlayer(url: url))
-//                              }
+                //                if let videoURL = videoURL {
+                //                                    VideoPlayer(player: AVPlayer(url: videoURL))
+                //                                } else {
+                //                                    Text("Failed to load video")
+                //                                }
+
+                //                if let externalVideoURL = externalVideoURL {
+                //                                  VideoPlayer(player: AVPlayer(url: externalVideoURL))
+                //                              } else {
+                //                                  Text("Failed to load video")
+                //                              }
 
                 Text("Animasi")
                 Header(title: "")
@@ -31,43 +39,67 @@ struct WaitingPaymentView: View {
                             VStack {
                                 HStack{
                                     Text ("Complete your payment within")
+                                        .font(Font.custom("Poppins-Semibold", size: 14))
+
                                     Spacer()
                                     Text("10m 2s")
+                                        .font(Font.custom("Poppins-Semibold", size: 24))
+                                        .foregroundColor(Color(red: 0.29, green: 0.8, blue: 0.89))
                                 }
                             }
                             //End Payment Time
 
                             //Payment Method Start
-                            HStack {
+                            HStack(spacing: 12) {
                                 Image("apple-pay")
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 24)
                                 Text("Apple Pay")
+                                    .font(Font.custom("Poppins", size: 16))
+                                    .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
+
                                 Spacer()
                             }
                             //End Payment Method
                         }
 
-                        VStack {
+                        VStack(spacing: 12){
                             //Order Status Start
                             HStack {
                                 VStack(alignment: .leading) {
                                     Text("Order #4231")
-                                    Text("26 Mar 2024 - 02.30 PM")
-                                }
+                                        .font(Font.custom("poppins-semibold", size: 20))
+                                        .foregroundStyle(Color(red: 0.22, green: 0.25, blue: 0.26))
 
+                                    Text("26 Mar 2024 - 02.30 PM")
+                                        .font(Font.custom("poppins", size: 12))
+                                        .foregroundStyle(Color(red: 0.33, green: 0.34, blue: 0.35))
+                                }
+                                Spacer()
                                 Text("Waiting for Payment")
+                                    .font(Font.custom("poppins-semibold", size: 16))
+                                    .foregroundStyle(Color(red: 1, green: 0.76, blue: 0.29))
+                                    .padding(.horizontal,12)
+                                    .padding(.vertical,8)
+                                    .background(Color(red: 1, green: 0.96, blue: 0.89))
+                                    .cornerRadius(999)
+
                             }
                             // End Order Status
 
                             //Location Start
                             HStack {
                                 Image(systemName: "mappin")
+                                    .foregroundStyle(Color(red: 1, green: 0.76, blue: 0.29))
                                 Text("Lawson Syahdan")
+                                    .font(Font.custom("poppins", size: 14))
+                                    .foregroundStyle(Color(red: 0.22, green: 0.25, blue: 0.26))
                                 Spacer()
                             }
                             //End Location
                         }
 
-    //                    Complete Order Button
+                        //                    Complete Order Button
                         Button(action: {
                         }) {
                             HStack(alignment: .center, spacing: 8) {
@@ -82,8 +114,26 @@ struct WaitingPaymentView: View {
                             .background(Color(red: 0.8, green: 0.82, blue: 0.84))
                             .cornerRadius(14)
                         }
-    //                    End Complete Order Button
+                        //End Complete Order Button
 
+                        //total items start
+                        HStack {
+                            Text("5 Items")
+                                .font(Font.custom("poppins-semibold", size: 14))
+                            Spacer()
+                            Text("Rp250,000")
+                                .font(Font.custom("poppins-semibold", size: 20))
+
+                        }
+                        //end total items
+
+                        VStack {
+                            Checkout_ProductCardView(imgSrc: "pocky", productName: "Pocky", price: "10.800", qty: 2)
+
+                            Checkout_ProductCardView(imgSrc: "pocky", productName: "Pocky", price: "10.800", qty: 2)
+
+                            Checkout_ProductCardView(imgSrc: "pocky", productName: "Pocky", price: "10.800", qty: 1)
+                        }
 
                     }
                 }

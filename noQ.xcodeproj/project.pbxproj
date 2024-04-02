@@ -22,6 +22,7 @@
 		203F29072BBAEB580068D08E /* CategoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203F29062BBAEB580068D08E /* CategoryCardView.swift */; };
 		203F29092BBB09250068D08E /* WaitingPaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203F29082BBB09250068D08E /* WaitingPaymentView.swift */; };
 		203F290F2BBB19470068D08E /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203F290E2BBB19470068D08E /* AVKit.framework */; };
+		203F29132BBBC3340068D08E /* Checkout-ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203F29122BBBC3080068D08E /* Checkout-ProductCardView.swift */; };
 		20BFA0312BB799A1007899C5 /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BFA0302BB799A1007899C5 /* BasketView.swift */; };
 		EF103CC82BBBAF7F00A90D92 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF103CC72BBBAF7F00A90D92 /* SplashScreen.swift */; };
 		EF14F8092BBA7A5100789FD8 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF14F8082BBA7A5100789FD8 /* BackButton.swift */; };
@@ -59,7 +60,9 @@
 		2018A8E82BBA775E0039D031 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		203F29062BBAEB580068D08E /* CategoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardView.swift; sourceTree = "<group>"; };
 		203F29082BBB09250068D08E /* WaitingPaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingPaymentView.swift; sourceTree = "<group>"; };
+		203F290B2BBB0F9C0068D08E /* animasi-jam.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "animasi-jam.mp4"; path = "../../../../Users/dindaayusyafitri/Documents/ADA Projects/noQ/animasi-jam.mp4"; sourceTree = DEVELOPER_DIR; };
 		203F290E2BBB19470068D08E /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		203F29122BBBC3080068D08E /* Checkout-ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Checkout-ProductCardView.swift"; sourceTree = "<group>"; };
 		20BFA0302BB799A1007899C5 /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BasketView.swift; path = noQ/BasketView.swift; sourceTree = SOURCE_ROOT; };
 		EF103CC72BBBAF7F00A90D92 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		EF14F8082BBA7A5100789FD8 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
@@ -160,6 +163,7 @@
 		EF9139FC2BB4FE3A001453E3 = {
 			isa = PBXGroup;
 			children = (
+				203F290B2BBB0F9C0068D08E /* animasi-jam.mp4 */,
 				EF913A072BB4FE3A001453E3 /* noQ */,
 				EF913A062BB4FE3A001453E3 /* Products */,
 				203F290D2BBB19470068D08E /* Frameworks */,
@@ -201,6 +205,7 @@
 				203F29062BBAEB580068D08E /* CategoryCardView.swift */,
 				EF1FA6C02BBA474800A35097 /* Maps.swift */,
 				203F29082BBB09250068D08E /* WaitingPaymentView.swift */,
+				203F29122BBBC3080068D08E /* Checkout-ProductCardView.swift */,
 				EF103CC72BBBAF7F00A90D92 /* SplashScreen.swift */,
 				EF8F50422BBBC28200ACC5DF /* GifImage.swift */,
 				EF913A0E2BB4FE3B001453E3 /* Assets.xcassets */,
@@ -295,6 +300,7 @@
 			files = (
 				20BFA0312BB799A1007899C5 /* BasketView.swift in Sources */,
 				F599E2AB2BBAC322005D627D /* LandingView.swift in Sources */,
+				203F29132BBBC3340068D08E /* Checkout-ProductCardView.swift in Sources */,
 				EF1FA6BF2BB887EB00A35097 /* OrderHistoryDetails.swift in Sources */,
 				F599E2A72BBA97D3005D627D /* LogIn.swift in Sources */,
 				EF9C4DF02BB8592B000E4439 /* OrderHistory.swift in Sources */,
