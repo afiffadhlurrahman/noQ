@@ -1,21 +1,20 @@
 //
-//  WaitingPaymentView.swift
+//  WaitingOrderView.swift
 //  noQ
 //
-//  Created by Dinda Ayu Syafitri on 01/04/24.
+//  Created by Dinda Ayu Syafitri on 02/04/24.
 //
 
 import SwiftUI
-import AVKit
 
-struct WaitingPaymentView: View {
+struct WaitingOrderView: View {
     @Environment(\.dismiss) var backbutton
 
     var body: some View {
         NavigationView{
             VStack {
                 ZStack(alignment: .topLeading) {
-                    GifImage("jam")
+                    GifImage("animasi lari stretch_1")
                     Text("Back")
                         .font(Font.custom("Poppins-Semibold", size: 14))
                         .foregroundStyle(.white)
@@ -24,15 +23,15 @@ struct WaitingPaymentView: View {
                         })
                         .padding(.horizontal, 20)
                 }
-                .background(Color(red: 0.96, green: 0.83, blue: 0.51))
+                .background(Color(red: 0.19, green: 0.82, blue: 0.94))
 
                 ScrollView {
                     VStack (spacing: 24){
                         VStack {
-                            //Payment Time
+                            //Order Time
                             VStack {
                                 HStack{
-                                    Text ("Complete your payment within")
+                                    Text ("Your order will be ready in")
                                         .font(Font.custom("Poppins-Semibold", size: 14))
 
                                     Spacer()
@@ -41,21 +40,9 @@ struct WaitingPaymentView: View {
                                         .foregroundColor(Color(red: 0.29, green: 0.8, blue: 0.89))
                                 }
                             }
-                            //End Payment Time
-
-                            //Payment Method Start
-                            HStack(spacing: 12) {
-                                Image("apple-pay")
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 24)
-                                Text("Apple Pay")
-                                    .font(Font.custom("Poppins", size: 16))
-                                    .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
-
-                                Spacer()
-                            }
-                            //End Payment Method
                         }
+                            //End Order Time
+
 
                         VStack(spacing: 12){
                             //Order Status Start
@@ -70,7 +57,7 @@ struct WaitingPaymentView: View {
                                         .foregroundStyle(Color(red: 0.33, green: 0.34, blue: 0.35))
                                 }
                                 Spacer()
-                                Text("Waiting for Payment")
+                                Text("In Progress")
                                     .font(Font.custom("poppins-semibold", size: 16))
                                     .foregroundStyle(Color(red: 1, green: 0.76, blue: 0.29))
                                     .padding(.horizontal,12)
@@ -136,7 +123,6 @@ struct WaitingPaymentView: View {
                                 .font(Font.custom("poppins-semibold", size: 14))
                                 .foregroundStyle(Color(red: 0.96, green: 0.25, blue: 0.37))
                         }
-
                     }
                 }
                 .padding(.horizontal, 20)
@@ -149,5 +135,5 @@ struct WaitingPaymentView: View {
 }
 
 #Preview {
-    WaitingPaymentView()
+    WaitingOrderView()
 }
