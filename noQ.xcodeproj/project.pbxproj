@@ -15,6 +15,11 @@
 		016343912BBA54B50044FAD7 /* Catalogue-CartCheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016343902BBA54B50044FAD7 /* Catalogue-CartCheckoutView.swift */; };
 		016343AE2BBAC36B0044FAD7 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016343AD2BBAC36B0044FAD7 /* ProductDetailView.swift */; };
 		016343B02BBAC3B80044FAD7 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016343AF2BBAC3B80044FAD7 /* Header.swift */; };
+		01710D6A2BBC5AFF004EF088 /* animasi pick up_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 01710D672BBC5AFF004EF088 /* animasi pick up_1.gif */; };
+		01710D6B2BBC5AFF004EF088 /* animasi jam stretch_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 01710D682BBC5AFF004EF088 /* animasi jam stretch_1.gif */; };
+		01710D6C2BBC5AFF004EF088 /* animasi lari stretch_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 01710D692BBC5AFF004EF088 /* animasi lari stretch_1.gif */; };
+		01710D742BBC5C0B004EF088 /* animasi jalan.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 01710D732BBC5C0B004EF088 /* animasi jalan.mp4 */; };
+		01710D782BBC60CD004EF088 /* splashscreen.gif in Resources */ = {isa = PBXBuildFile; fileRef = 01710D772BBC60CD004EF088 /* splashscreen.gif */; };
 		2018A8AD2BB84CC20039D031 /* Basket-ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018A8AC2BB84CC20039D031 /* Basket-ProductCardView.swift */; };
 		2018A8AF2BB87A930039D031 /* PaymentOptModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018A8AE2BB87A930039D031 /* PaymentOptModalView.swift */; };
 		2018A8B12BB9C4C70039D031 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018A8B02BB9C4C70039D031 /* HomeView.swift */; };
@@ -26,13 +31,8 @@
 		20BFA0312BB799A1007899C5 /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BFA0302BB799A1007899C5 /* BasketView.swift */; };
 		EF103CC82BBBAF7F00A90D92 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF103CC72BBBAF7F00A90D92 /* SplashScreen.swift */; };
 		EF14F8092BBA7A5100789FD8 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF14F8082BBA7A5100789FD8 /* BackButton.swift */; };
-		EF1C2A9A2BBC457900CFB30E /* animasi jam stretch_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = EF1C2A962BBC457900CFB30E /* animasi jam stretch_1.gif */; };
-		EF1C2A9B2BBC457900CFB30E /* animasi lari stretch_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = EF1C2A972BBC457900CFB30E /* animasi lari stretch_1.gif */; };
-		EF1C2A9C2BBC457900CFB30E /* animasi pick up_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = EF1C2A982BBC457900CFB30E /* animasi pick up_1.gif */; };
-		EF1C2AA02BBC46A700CFB30E /* splashscreen.gif in Resources */ = {isa = PBXBuildFile; fileRef = EF1C2A9F2BBC46A700CFB30E /* splashscreen.gif */; };
 		EF1FA6BF2BB887EB00A35097 /* OrderHistoryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1FA6BE2BB887EB00A35097 /* OrderHistoryDetails.swift */; };
 		EF1FA6C12BBA474800A35097 /* Maps.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1FA6C02BBA474800A35097 /* Maps.swift */; };
-		EF8907BF2BBBC43B00C2DCA9 /* animasi-jam.gif in Resources */ = {isa = PBXBuildFile; fileRef = EF8907BE2BBBC43B00C2DCA9 /* animasi-jam.gif */; };
 		EF8F50432BBBC28200ACC5DF /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8F50422BBBC28200ACC5DF /* GifImage.swift */; };
 		EF913A092BB4FE3A001453E3 /* noQApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF913A082BB4FE3A001453E3 /* noQApp.swift */; };
 		EF913A0B2BB4FE3A001453E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF913A0A2BB4FE3A001453E3 /* ContentView.swift */; };
@@ -55,25 +55,24 @@
 		016343902BBA54B50044FAD7 /* Catalogue-CartCheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Catalogue-CartCheckoutView.swift"; sourceTree = "<group>"; };
 		016343AD2BBAC36B0044FAD7 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		016343AF2BBAC3B80044FAD7 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		01710D672BBC5AFF004EF088 /* animasi pick up_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "animasi pick up_1.gif"; path = "Animations-GIF/animasi pick up_1.gif"; sourceTree = "<group>"; };
+		01710D682BBC5AFF004EF088 /* animasi jam stretch_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "animasi jam stretch_1.gif"; path = "Animations-GIF/animasi jam stretch_1.gif"; sourceTree = "<group>"; };
+		01710D692BBC5AFF004EF088 /* animasi lari stretch_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "animasi lari stretch_1.gif"; path = "Animations-GIF/animasi lari stretch_1.gif"; sourceTree = "<group>"; };
+		01710D732BBC5C0B004EF088 /* animasi jalan.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "animasi jalan.mp4"; path = "Animations-Video/animasi jalan.mp4"; sourceTree = "<group>"; };
+		01710D772BBC60CD004EF088 /* splashscreen.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = splashscreen.gif; path = "Animations-GIF/splashscreen.gif"; sourceTree = "<group>"; };
 		2018A8AC2BB84CC20039D031 /* Basket-ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Basket-ProductCardView.swift"; sourceTree = "<group>"; };
 		2018A8AE2BB87A930039D031 /* PaymentOptModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentOptModalView.swift; sourceTree = "<group>"; };
 		2018A8B02BB9C4C70039D031 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2018A8E82BBA775E0039D031 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		203F29062BBAEB580068D08E /* CategoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardView.swift; sourceTree = "<group>"; };
 		203F29082BBB09250068D08E /* WaitingPaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingPaymentView.swift; sourceTree = "<group>"; };
-		203F290B2BBB0F9C0068D08E /* animasi-jam.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "animasi-jam.mp4"; path = "../../../../Users/dindaayusyafitri/Documents/ADA Projects/noQ/animasi-jam.mp4"; sourceTree = DEVELOPER_DIR; };
 		203F290E2BBB19470068D08E /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		203F29122BBBC3080068D08E /* Checkout-ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Checkout-ProductCardView.swift"; sourceTree = "<group>"; };
 		20BFA0302BB799A1007899C5 /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BasketView.swift; path = noQ/BasketView.swift; sourceTree = SOURCE_ROOT; };
 		EF103CC72BBBAF7F00A90D92 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		EF14F8082BBA7A5100789FD8 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
-		EF1C2A962BBC457900CFB30E /* animasi jam stretch_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animasi jam stretch_1.gif"; sourceTree = "<group>"; };
-		EF1C2A972BBC457900CFB30E /* animasi lari stretch_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animasi lari stretch_1.gif"; sourceTree = "<group>"; };
-		EF1C2A982BBC457900CFB30E /* animasi pick up_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animasi pick up_1.gif"; sourceTree = "<group>"; };
-		EF1C2A9F2BBC46A700CFB30E /* splashscreen.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = splashscreen.gif; sourceTree = "<group>"; };
 		EF1FA6BE2BB887EB00A35097 /* OrderHistoryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryDetails.swift; sourceTree = "<group>"; };
 		EF1FA6C02BBA474800A35097 /* Maps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
-		EF8907BE2BBBC43B00C2DCA9 /* animasi-jam.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "animasi-jam.gif"; path = "../../../../../Downloads/animasi-jam.gif"; sourceTree = "<group>"; };
 		EF8F50422BBBC28200ACC5DF /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
 		EF913A052BB4FE3A001453E3 /* noQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF913A082BB4FE3A001453E3 /* noQApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noQApp.swift; sourceTree = "<group>"; };
@@ -102,8 +101,8 @@
 		0149CF382BB5241C008BDD13 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				EF1C2A992BBC457900CFB30E /* Animations-GIF */,
-				203F290A2BBB0F7B0068D08E /* Animations-Video */,
+				01710D722BBC5BFD004EF088 /* Animations-Video */,
+				01710D662BBC5AF3004EF088 /* Animations-GIF */,
 				0149CF392BB52424008BDD13 /* Fonts */,
 				EF14F8052BBA797D00789FD8 /* Component */,
 			);
@@ -126,12 +125,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		203F290A2BBB0F7B0068D08E /* Animations-Video */ = {
+		01710D662BBC5AF3004EF088 /* Animations-GIF */ = {
 			isa = PBXGroup;
 			children = (
-				EF8907BE2BBBC43B00C2DCA9 /* animasi-jam.gif */,
+				01710D772BBC60CD004EF088 /* splashscreen.gif */,
+				01710D682BBC5AFF004EF088 /* animasi jam stretch_1.gif */,
+				01710D692BBC5AFF004EF088 /* animasi lari stretch_1.gif */,
+				01710D672BBC5AFF004EF088 /* animasi pick up_1.gif */,
 			);
-			path = "Animations-Video";
+			name = "Animations-GIF";
+			sourceTree = "<group>";
+		};
+		01710D722BBC5BFD004EF088 /* Animations-Video */ = {
+			isa = PBXGroup;
+			children = (
+				01710D732BBC5C0B004EF088 /* animasi jalan.mp4 */,
+			);
+			name = "Animations-Video";
 			sourceTree = "<group>";
 		};
 		203F290D2BBB19470068D08E /* Frameworks */ = {
@@ -151,22 +161,9 @@
 			path = Component;
 			sourceTree = "<group>";
 		};
-		EF1C2A992BBC457900CFB30E /* Animations-GIF */ = {
-			isa = PBXGroup;
-			children = (
-				EF1C2A962BBC457900CFB30E /* animasi jam stretch_1.gif */,
-				EF1C2A972BBC457900CFB30E /* animasi lari stretch_1.gif */,
-				EF1C2A982BBC457900CFB30E /* animasi pick up_1.gif */,
-				EF1C2A9F2BBC46A700CFB30E /* splashscreen.gif */,
-			);
-			name = "Animations-GIF";
-			path = "../../../../Downloads/Animations-GIF/Animations-GIF";
-			sourceTree = "<group>";
-		};
 		EF9139FC2BB4FE3A001453E3 = {
 			isa = PBXGroup;
 			children = (
-				203F290B2BBB0F9C0068D08E /* animasi-jam.mp4 */,
 				EF913A072BB4FE3A001453E3 /* noQ */,
 				EF913A062BB4FE3A001453E3 /* Products */,
 				203F290D2BBB19470068D08E /* Frameworks */,
@@ -283,15 +280,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF1C2A9B2BBC457900CFB30E /* animasi lari stretch_1.gif in Resources */,
+				01710D742BBC5C0B004EF088 /* animasi jalan.mp4 in Resources */,
 				0149CF412BB52C43008BDD13 /* Poppins-SemiBold.ttf in Resources */,
+				01710D6A2BBC5AFF004EF088 /* animasi pick up_1.gif in Resources */,
 				EF913A122BB4FE3B001453E3 /* Preview Assets.xcassets in Resources */,
-				EF1C2A9A2BBC457900CFB30E /* animasi jam stretch_1.gif in Resources */,
-				EF8907BF2BBBC43B00C2DCA9 /* animasi-jam.gif in Resources */,
+				01710D6B2BBC5AFF004EF088 /* animasi jam stretch_1.gif in Resources */,
+				01710D6C2BBC5AFF004EF088 /* animasi lari stretch_1.gif in Resources */,
 				EF913A0F2BB4FE3B001453E3 /* Assets.xcassets in Resources */,
 				0149CF422BB52D9D008BDD13 /* Poppins-Regular.ttf in Resources */,
-				EF1C2A9C2BBC457900CFB30E /* animasi pick up_1.gif in Resources */,
-				EF1C2AA02BBC46A700CFB30E /* splashscreen.gif in Resources */,
+				01710D782BBC60CD004EF088 /* splashscreen.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
