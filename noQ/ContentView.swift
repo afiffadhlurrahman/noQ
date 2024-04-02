@@ -13,9 +13,22 @@ struct ContentView: View {
     @Query private var items: [Item]
 
     var body: some View {
+        VStack{
+            GifImage("animasi jam stretch_1").aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+            Text("Hello")
+            GifImage("animasi lari stretch_1").aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+        }
         NavigationSplitView {
             Text("Hello SwiftUI!");
             Text("Team 17 - MC 1");
+            
+            VStack (spacing:4){
+                
+            }
+            
+//            
+//            GifImage("animasi pick up_1")
+            
             List {
                 ForEach(items) { item in
                     NavigationLink {
@@ -38,6 +51,7 @@ struct ContentView: View {
             }
         } detail: {
             Text("Select an item")
+            
         }
     }
 
