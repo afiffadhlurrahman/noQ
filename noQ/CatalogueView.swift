@@ -84,7 +84,7 @@ struct CatalogueView: View {
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack(spacing: 16) {
                 HStack{
                     Image(systemName: "chevron.left").font(.system(size: 24))                .onTapGesture(count: 1) {

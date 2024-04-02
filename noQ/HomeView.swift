@@ -78,7 +78,7 @@ struct HomeView: View {
         Category(label: "Micin", discount:  false)
     ]
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 VStack {
                     Image("homeHero2")
@@ -157,8 +157,8 @@ struct HomeView: View {
                                     if i.isMultiple(of: 2) {
                                         let isIndexValid = products.indices.contains(i+1)
                                         
-                                        HStack(alignment: .top, spacing: 5){
-
+                                        HStack(alignment: .top, spacing: 8){
+                                            
                                             Catalogue_ProductCardView(imgSrc: products[i].imgSrc, productName: products[i].productName, disc: products[i].disc, initPrice: products[i].initPrice, finPrice: products[i].finPrice)
                                             
                                             if isIndexValid {
