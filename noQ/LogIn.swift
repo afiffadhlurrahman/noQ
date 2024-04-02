@@ -68,7 +68,7 @@ struct LogIn: View {
                               .font(Font.custom("Poppins", size: 14))
                               .multilineTextAlignment(.center)
                               .foregroundColor(Color(red: 0.33, green: 0.34, blue: 0.35))
-                            TextField(text: $password, prompt: Text("Your Password")) {
+                            SecureField(text: $password, prompt: Text("Your Password")) {
                             }.padding(16)
                                 .cornerRadius(14)
                                 .overlay(
