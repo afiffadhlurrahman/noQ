@@ -12,9 +12,9 @@ struct LandingView: View {
         NavigationView{
             ZStack{
                 VStack(){
-                    
                     VStack(alignment: .leading){
-                        Button(action: SignUp) {
+                        NavigationLink(destination: HomeView()
+                            .navigationBarBackButtonHidden(true)){
                             // Sub-Header/S5›
                             Text("Skip")
                               .font(
@@ -53,7 +53,11 @@ struct LandingView: View {
                         
                         // Button
                         VStack{
-                            Button(action:SignInEmail) {
+                            NavigationLink(destination: LogIn()
+                                .navigationBarTitle("")
+                                .navigationBarHidden(true)
+                                .navigationBarBackButtonHidden(true))
+                            {
                                 HStack(alignment: .center, spacing: 8) { // Body/B4
                                     Text("Sign In with Email")
                                         .font(Font.custom("Poppins-semibold", size: 16))
@@ -100,7 +104,10 @@ struct LandingView: View {
                             .font(Font.custom("Poppins", size: 12))
                             .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
                             
-                        Button(action: SignUp) {
+                        NavigationLink(destination: SignUpView()
+                            .navigationBarBackButtonHidden(true)
+                            .navigationBarHidden(true))
+                        {
                             Text("Sign Up")
                                 .font(Font.custom("Poppins", size: 12))
                                 .multilineTextAlignment(.center)
@@ -110,8 +117,6 @@ struct LandingView: View {
                     }
                 }
             }
-            
-            
         }
         
     }

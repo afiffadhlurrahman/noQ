@@ -16,7 +16,7 @@ struct SignUpView: View {
     @State var isShowingPassword: Bool = false
     @State var isShowingPasswordConf: Bool = false
     @FocusState var isFieldFocus: FieldToFocus?
-    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
         ScrollView{
@@ -29,6 +29,9 @@ struct SignUpView: View {
                           .weight(.semibold)
                       )
                       .foregroundColor(Constants.colorsBaseBlack)
+                      .onTapGesture (perform: {
+                          self.presentationMode.wrappedValue.dismiss()
+                      })
                 }
                 
                 // Form

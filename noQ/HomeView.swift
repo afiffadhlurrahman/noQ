@@ -210,13 +210,13 @@ struct HomeView: View {
                                     .background(.white)
                                     .cornerRadius(100)
                             }
-                            
                             Image(systemName: "person.crop.circle")
                                 .foregroundColor(Color(red: 0.69, green: 0.71, blue: 0.72))
                                 .frame(width: 20, height: 20)
                                 .padding(6)
                                 .background(.white)
                                 .cornerRadius(100)
+                            
                         }
                     }
                     
