@@ -11,7 +11,7 @@ struct Maps: View {
     var body: some View {
         VStack(spacing: 16){
             HStack(alignment: .center){
-                Image(systemName: "chevron.left").font(.system(size: 24))
+                BackButton()
                 Spacer()
                 // Sub-Header/S3
                 Text("Nearest Store")
