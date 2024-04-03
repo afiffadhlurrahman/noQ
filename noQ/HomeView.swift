@@ -81,7 +81,7 @@ struct HomeView: View {
         NavigationStack {
             ZStack {
                 VStack {
-                    Image("homeHero2")
+                    Image("homeHero3")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(maxWidth:.infinity,alignment: .center)
