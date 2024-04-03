@@ -108,7 +108,7 @@ struct BasketView: View {
             .navigationDestination(isPresented: $toMapView){
                 Maps()
             }
-        }
+        }.navigationBarBackButtonHidden()
     }
 }
 
