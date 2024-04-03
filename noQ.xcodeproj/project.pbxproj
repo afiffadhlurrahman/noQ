@@ -19,6 +19,7 @@
 		01710D6C2BBC5AFF004EF088 /* animasi lari stretch_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 01710D692BBC5AFF004EF088 /* animasi lari stretch_1.gif */; };
 		01710D742BBC5C0B004EF088 /* animasi jalan.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 01710D732BBC5C0B004EF088 /* animasi jalan.mp4 */; };
 		01710D782BBC60CD004EF088 /* splashscreen.gif in Resources */ = {isa = PBXBuildFile; fileRef = 01710D772BBC60CD004EF088 /* splashscreen.gif */; };
+		01710D7A2BBCED93004EF088 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01710D792BBCED93004EF088 /* Poppins-SemiBold.ttf */; };
 		2018A8AD2BB84CC20039D031 /* Basket-ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018A8AC2BB84CC20039D031 /* Basket-ProductCardView.swift */; };
 		2018A8AF2BB87A930039D031 /* PaymentOptModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018A8AE2BB87A930039D031 /* PaymentOptModalView.swift */; };
 		2018A8B12BB9C4C70039D031 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018A8B02BB9C4C70039D031 /* HomeView.swift */; };
@@ -53,7 +54,6 @@
 		0149CF3B2BB52468008BDD13 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Regular.ttf"; path = "noQ/Resources/Fonts/Poppins-Regular.ttf"; sourceTree = SOURCE_ROOT; };
 		0149CF3C2BB52507008BDD13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0149CF3E2BB52675008BDD13 /* CatalogueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueView.swift; sourceTree = "<group>"; };
-		0149CF402BB52C43008BDD13 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-SemiBold.ttf"; path = "noQ/Resources/Fonts/Poppins-SemiBold.ttf"; sourceTree = SOURCE_ROOT; };
 		0163438C2BB930270044FAD7 /* Catalogue-ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Catalogue-ProductCardView.swift"; sourceTree = "<group>"; };
 		0163438E2BB931EF0044FAD7 /* Catalogue-CategoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Catalogue-CategoryCardView.swift"; sourceTree = "<group>"; };
 		016343902BBA54B50044FAD7 /* Catalogue-CartCheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Catalogue-CartCheckoutView.swift"; sourceTree = "<group>"; };
@@ -64,6 +64,7 @@
 		01710D692BBC5AFF004EF088 /* animasi lari stretch_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "animasi lari stretch_1.gif"; path = "Animations-GIF/animasi lari stretch_1.gif"; sourceTree = "<group>"; };
 		01710D732BBC5C0B004EF088 /* animasi jalan.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "animasi jalan.mp4"; path = "Animations-Video/animasi jalan.mp4"; sourceTree = "<group>"; };
 		01710D772BBC60CD004EF088 /* splashscreen.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = splashscreen.gif; path = "Animations-GIF/splashscreen.gif"; sourceTree = "<group>"; };
+		01710D792BBCED93004EF088 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		2018A8AC2BB84CC20039D031 /* Basket-ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Basket-ProductCardView.swift"; sourceTree = "<group>"; };
 		2018A8AE2BB87A930039D031 /* PaymentOptModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentOptModalView.swift; sourceTree = "<group>"; };
 		2018A8B02BB9C4C70039D031 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -126,7 +127,7 @@
 		0149CF392BB52424008BDD13 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				0149CF402BB52C43008BDD13 /* Poppins-SemiBold.ttf */,
+				01710D792BBCED93004EF088 /* Poppins-SemiBold.ttf */,
 				0149CF3B2BB52468008BDD13 /* Poppins-Regular.ttf */,
 			);
 			path = Fonts;
@@ -317,6 +318,7 @@
 				01710D742BBC5C0B004EF088 /* animasi jalan.mp4 in Resources */,
 				01710D6A2BBC5AFF004EF088 /* animasi pick up_1.gif in Resources */,
 				01710D6B2BBC5AFF004EF088 /* animasi jam stretch_1.gif in Resources */,
+				01710D7A2BBCED93004EF088 /* Poppins-SemiBold.ttf in Resources */,
 				01710D6C2BBC5AFF004EF088 /* animasi lari stretch_1.gif in Resources */,
 				EF913A0F2BB4FE3B001453E3 /* Assets.xcassets in Resources */,
 				0149CF422BB52D9D008BDD13 /* Poppins-Regular.ttf in Resources */,

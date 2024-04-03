@@ -38,14 +38,14 @@ struct LandingView: View {
                             
                             Text("Welcome !")
                               .font(
-                                Font.custom("Poppins", size: 34)
+                                Font.custom("Poppins-Regular", size: 34)
                               )
                               .fontWeight(.bold)
                               .foregroundColor(Color(red: 0.11, green: 0.11, blue: 0.11))
                             
                             // Body/B1
                             Text("Enjoy shopping without queuing")
-                              .font(Font.custom("Poppins", size: 20))
+                              .font(Font.custom("Poppins-Regular", size: 20))
                               .foregroundColor(Color(red: 0.11, green: 0.11, blue: 0.11))
                         }.padding(20)
                         
@@ -96,7 +96,7 @@ struct LandingView: View {
                     HStack{
                         // Body/B4
                         Text("Didn’t have an account ? ")
-                            .font(Font.custom("Poppins", size: 12))
+                            .font(Font.custom("Poppins-Regular", size: 12))
                             .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
                             
                         NavigationLink(destination: SignUpView()
@@ -104,7 +104,7 @@ struct LandingView: View {
                             .navigationBarHidden(true))
                         {
                             Text("Sign Up")
-                                .font(Font.custom("Poppins", size: 12))
+                                .font(Font.custom("Poppins-Regular", size: 12))
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color(red: 0.29, green: 0.8, blue: 0.89))
                         }

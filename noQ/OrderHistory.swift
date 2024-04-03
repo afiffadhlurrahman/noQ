@@ -55,7 +55,7 @@ struct OrderHistory: View {
                                 Text("Lawson Syahdan")
                                 Text("26 Mar 2024 - 02.30 PM")
                             }
-                            .font(Font.custom("Inter", size: 12))
+                            .font(Font.custom("Poppins-Regular", size: 12))
                             .foregroundColor(Color(red: 0.69, green: 0.71, blue: 0.72))
                             
                             HStack(){
@@ -73,7 +73,7 @@ struct OrderHistory: View {
                                 NavigationLink(destination: OrderHistoryDetails()){
                                     HStack(alignment: .center, spacing: 8) { // Body/B4
                                         Text("See Details")
-                                          .font(Font.custom("Poppins", size: 12))
+                                          .font(Font.custom("Poppins-Regular", size: 12))
                                           .multilineTextAlignment(.center)
                                           .foregroundColor(Color(red: 1, green: 0.76, blue: 0.29))
                                     }
@@ -89,7 +89,7 @@ struct OrderHistory: View {
                                 // Button Reorder
                                 HStack(alignment: .center, spacing: 8) { // Body/B4
                                     Text("Reorder")
-                                      .font(Font.custom("Poppins", size: 12))
+                                      .font(Font.custom("Poppins-Regular", size: 12))
                                       .multilineTextAlignment(.center)
                                       .foregroundColor(.white)
                                 }
@@ -129,7 +129,7 @@ struct OrderHistory: View {
                                 Text("Lawson Syahdan")
                                 Text("26 Mar 2024 - 02.30 PM")
                             }
-                            .font(Font.custom("Inter", size: 12))
+                            .font(Font.custom("Poppins-Regular", size: 12))
                             .foregroundColor(Color(red: 0.69, green: 0.71, blue: 0.72))
                             
                             HStack(){
@@ -148,7 +148,7 @@ struct OrderHistory: View {
                                 NavigationLink(destination: OrderHistoryDetails()){
                                     HStack(alignment: .center, spacing: 8) { // Body/B4
                                         Text("See Details")
-                                            .font(Font.custom("Poppins", size: 12))
+                                            .font(Font.custom("Poppins-Regular", size: 12))
                                             .multilineTextAlignment(.center)
                                             .foregroundColor(Color(red: 1, green: 0.76, blue: 0.29))
                                     }
@@ -164,7 +164,7 @@ struct OrderHistory: View {
                                 // Button Reorder
                                 HStack(alignment: .center, spacing: 8) { // Body/B4
                                     Text("Reorder")
-                                      .font(Font.custom("Poppins", size: 12))
+                                      .font(Font.custom("Poppins-Regular", size: 12))
                                       .multilineTextAlignment(.center)
                                       .foregroundColor(.white)
                                 }
@@ -204,7 +204,7 @@ struct OrderHistory: View {
                                 Text("Lawson Syahdan")
                                 Text("26 Mar 2024 - 02.30 PM")
                             }
-                            .font(Font.custom("Inter", size: 12))
+                            .font(Font.custom("Poppins-Regular", size: 12))
                             .foregroundColor(Color(red: 0.69, green: 0.71, blue: 0.72))
                             
                             HStack(){
@@ -223,7 +223,7 @@ struct OrderHistory: View {
                                 NavigationLink(destination: OrderHistoryDetails()){
                                     HStack(alignment: .center, spacing: 8) { // Body/B4
                                         Text("See Details")
-                                            .font(Font.custom("Poppins", size: 12))
+                                            .font(Font.custom("Poppins-Regular", size: 12))
                                             .multilineTextAlignment(.center)
                                             .foregroundColor(Color(red: 1, green: 0.76, blue: 0.29))
                                     }
@@ -238,7 +238,7 @@ struct OrderHistory: View {
                                 // Button Reorder
                                 HStack(alignment: .center, spacing: 8) { // Body/B4
                                     Text("Reorder")
-                                      .font(Font.custom("Poppins", size: 12))
+                                      .font(Font.custom("Poppins-Regular", size: 12))
                                       .multilineTextAlignment(.center)
                                       .foregroundColor(.white)
                                 }

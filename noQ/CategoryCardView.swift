@@ -21,7 +21,7 @@ struct CategoryCardView: View {
                 VStack {
                     Image(imgSrc)
                     Text(category)
-                        .font(Font.custom("Poppins", size: 12))
+                        .font(Font.custom("Poppins-Regular", size: 12))
                 }
             ).overlay(
                 RoundedRectangle(cornerRadius: 12)

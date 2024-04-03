@@ -78,7 +78,7 @@ struct Catalogue_ProductCardView: View {
                             .cornerRadius(Constants.borderRadiusDEFAULT)
                             
                             Text("Rp\(initPrice)")
-                                .font(Font.custom("Inter", size: 12))
+                                .font(Font.custom("Poppins-Regular", size: 12))
                                 .strikethrough()
                                 .foregroundColor(Color(red: 0.69, green: 0.71, blue: 0.72))
                             
@@ -96,7 +96,7 @@ struct Catalogue_ProductCardView: View {
                 HStack{
                     HStack(alignment: .center, spacing: 8) { // Body/B4
                         Text("Checkout")
-                            .font(Font.custom("Poppins", size: 12))
+                            .font(Font.custom("Poppins-Regular", size: 12))
                             .multilineTextAlignment(.center)
                             .foregroundColor(.white)
                     }.onTapGesture(count: 1) {

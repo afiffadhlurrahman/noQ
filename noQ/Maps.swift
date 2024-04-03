@@ -40,12 +40,12 @@ struct Maps: View {
                             HStack(){
                                 Image(systemName: "mappin")
                                     .foregroundColor(.yellow)
-                                Text("Green Office Park 9").font(Font.custom("Poppins", size: 12))
+                                Text("Green Office Park 9").font(Font.custom("Poppins-Regular", size: 12))
                             }
                             HStack(){
                                 Image(systemName: "clock.fill")
                                     .foregroundColor(.yellow)
-                                Text("7.30 AM - 9.00 PM").font(Font.custom("Poppins", size: 12))
+                                Text("7.30 AM - 9.00 PM").font(Font.custom("Poppins-Regular", size: 12))
                             }
                         }
                     }
@@ -71,12 +71,12 @@ struct Maps: View {
                             HStack(){
                                 Image(systemName: "mappin")
                                     .foregroundColor(.yellow)
-                                Text("Green Office Park 9").font(Font.custom("Poppins", size: 12))
+                                Text("Green Office Park 9").font(Font.custom("Poppins-Regular", size: 12))
                             }
                             HStack(){
                                 Image(systemName: "clock.fill")
                                     .foregroundColor(.yellow)
-                                Text("7.30 AM - 9.00 PM").font(Font.custom("Poppins", size: 12))
+                                Text("7.30 AM - 9.00 PM").font(Font.custom("Poppins-Regular", size: 12))
                             }
                         }
                     }
@@ -102,12 +102,12 @@ struct Maps: View {
                             HStack(){
                                 Image(systemName: "mappin")
                                     .foregroundColor(.yellow)
-                                Text("Green Office Park 9").font(Font.custom("Poppins", size: 12))
+                                Text("Green Office Park 9").font(Font.custom("Poppins-Regular", size: 12))
                             }
                             HStack(){
                                 Image(systemName: "clock.fill")
                                     .foregroundColor(.yellow)
-                                Text("7.30 AM - 9.00 PM").font(Font.custom("Poppins", size: 12))
+                                Text("7.30 AM - 9.00 PM").font(Font.custom("Poppins-Regular", size: 12))
                             }
                         }
                     }

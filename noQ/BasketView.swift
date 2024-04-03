@@ -37,10 +37,10 @@ struct BasketView: View {
             VStack(alignment: .leading, spacing: 4){
                 HStack(spacing: 4){
                     Image(systemName: "storefront").font(.system(size: 16))
-                    Text("Lawson Syahdan").font( Font.custom("Poppins",size:10))
+                    Text("Lawson Syahdan").font( Font.custom("Poppins-Regular",size:10))
                 }.foregroundColor(Color(red:84/255, green:86/255, blue:88/255))
                 HStack(spacing: 8) {
-                    Text("Lawson Syahdan").font(Font.custom("Poppins", size: 16)).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    Text("Lawson Syahdan").font(Font.custom("Poppins-Regular", size: 16)).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     Image(systemName: "chevron.down").font(.system(size: 16))
                 }
 

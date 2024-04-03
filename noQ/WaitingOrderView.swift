@@ -53,7 +53,7 @@ struct WaitingOrderView: View {
                                         .foregroundStyle(Color(red: 0.22, green: 0.25, blue: 0.26))
 
                                     Text("26 Mar 2024 - 02.30 PM")
-                                        .font(Font.custom("Poppins", size: 12))
+                                        .font(Font.custom("Poppins-Regular", size: 12))
                                         .foregroundStyle(Color(red: 0.33, green: 0.34, blue: 0.35))
                                 }
                                 Spacer()
@@ -73,7 +73,7 @@ struct WaitingOrderView: View {
                                 Image(systemName: "mappin")
                                     .foregroundStyle(Color(red: 1, green: 0.76, blue: 0.29))
                                 Text("Lawson Syahdan")
-                                    .font(Font.custom("Poppins", size: 14))
+                                    .font(Font.custom("Poppins-Regular", size: 14))
                                     .foregroundStyle(Color(red: 0.22, green: 0.25, blue: 0.26))
                                 Spacer()
                             }

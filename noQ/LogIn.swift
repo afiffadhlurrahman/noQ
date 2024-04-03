@@ -22,7 +22,7 @@ struct LogIn: View {
                         // Sub-Header/S5›
                         Text("Back")
                           .font(
-                            Font.custom("Poppins", size: 14)
+                            Font.custom("Poppins-Regular", size: 14)
                           )
                           .foregroundColor(Constants.colorsBaseBlack)
                           .onTapGesture (perform: {
@@ -40,14 +40,14 @@ struct LogIn: View {
                         VStack (alignment: .center, spacing: 0){
                             Text("Welcome back!")
                               .font(
-                                Font.custom("Poppins", size: 34)
+                                Font.custom("Poppins-Regular", size: 34)
                                   .weight(.heavy)
                               )
                           .foregroundColor(Color(red: 0.11, green: 0.11, blue: 0.11))
                             
                             // Body/B1
                             Text("You’ve been missed")
-                              .font(Font.custom("Poppins", size: 20))
+                              .font(Font.custom("Poppins-Regular", size: 20))
                               .foregroundColor(Color(red: 0.11, green: 0.11, blue: 0.11))
                         }
                         
@@ -55,7 +55,7 @@ struct LogIn: View {
                         VStack (alignment: .trailing, spacing: 16){
                             VStack(alignment: .leading){
                                 Text("Email")
-                                  .font(Font.custom("Poppins", size: 14))
+                                  .font(Font.custom("Poppins-Regular", size: 14))
                                   .multilineTextAlignment(.center)
                                   .foregroundColor(Color(red: 0.33, green: 0.34, blue: 0.35))
                                 TextField(text: $email, prompt: Text("example@email .com")) {
@@ -72,7 +72,7 @@ struct LogIn: View {
                             // Password
                                 VStack(alignment: .leading){
                                     Text("Password")
-                                        .font(Font.custom("Poppins", size: 14))
+                                        .font(Font.custom("Poppins-Regular", size: 14))
                                         .multilineTextAlignment(.center)
                                         .foregroundColor(Color(red: 0.33, green: 0.34, blue: 0.35))
                                     
@@ -125,7 +125,7 @@ struct LogIn: View {
                             
                             Button(action: LogIn) {
                                 Text("Forgot your Password?")
-                                    .font(Font.custom("Poppins", size: 12))
+                                    .font(Font.custom("Poppins-Regular", size: 12))
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color(red: 0.29, green: 0.8, blue: 0.89))
                             }
@@ -151,12 +151,12 @@ struct LogIn: View {
                         HStack{
                             // Body/B4
                             Text("Didn’t have an account ? ")
-                                .font(Font.custom("Poppins", size: 12))
+                                .font(Font.custom("Poppins-Regular", size: 12))
                                 .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
                                 
                             Button(action: LogIn) {
                                 Text("Sign Up")
-                                    .font(Font.custom("Poppins", size: 12))
+                                    .font(Font.custom("Poppins-Regular", size: 12))
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color(red: 0.29, green: 0.8, blue: 0.89))
                             }

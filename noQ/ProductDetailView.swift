@@ -99,7 +99,7 @@ struct ProductDetailView: View {
                         .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26)).frame(maxWidth: .infinity, alignment: .leading).padding(.horizontal,20)
                     
                     Text("Blending the iconic chocolate sandwich cookie with a delightful strawberry-flavored filling")
-                        .font(Font.custom("Poppins", size: 12))
+                        .font(Font.custom("Poppins-Regular", size: 12))
                         .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26)).frame(maxWidth: .infinity, alignment: .leading).padding(.horizontal,20)
                     
                     HStack{

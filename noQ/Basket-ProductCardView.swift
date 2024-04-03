@@ -14,7 +14,7 @@ struct Basket_ProductCardView: View {
     var disc: String
     var initPrice: String
     var finPrice: String
-    var qty: Int
+    @State var qty: Int
     
     var body: some View {
         
@@ -29,7 +29,7 @@ struct Basket_ProductCardView: View {
                     .font(Font.custom("Poppins-SemiBold", size: 14))
                 
                 HStack(spacing: 8, content: {
-                    Text("\(disc) Off")                    .font(Font.custom("Poppins", size:12))
+                    Text("\(disc) Off")                    .font(Font.custom("Poppins-Regular", size:12))
                         .foregroundStyle(Color.white)
                         .padding(.horizontal, 4)
                         .padding(.vertical, 2)
@@ -38,31 +38,39 @@ struct Basket_ProductCardView: View {
                     
                     
                     Text("Rp\(initPrice)")
-                        .font(Font.custom("Poppins", size:14))
+                        .font(Font.custom("Poppins-Regular", size:14))
                         .foregroundStyle(Color(red:176/255, green:180/255, blue:184/255))
                 }
                 )
                 
+                let minusColor: Color = qty > 0 ? Color(red: 255/255, green: 195/255, blue: 75/255) : Color(red: 0.8, green: 0.82, blue: 0.84)
+                
                 HStack(alignment: .center){
                     Text("Rp\(finPrice)")
-                        .font(Font.custom("Poppins-semiBold", size:16))
+                        .font(Font.custom("Poppins-SemiBold", size:16))
                     Spacer()
                     HStack {
-                        Image(systemName: "plus.circle.fill").font(.system(size: 24))
-                            .foregroundStyle(Color(red: 255/255, green: 195/255, blue: 75/255))
+                        Image(systemName: "minus.circle.fill").font(.system(size: 24))
+                            .foregroundStyle(minusColor).onTapGesture {
+                                if qty > 0{
+                                    qty -= 1
+                                }
+                            }
                         RoundedRectangle(cornerRadius: 4)
                             .stroke(Color(red: 205/255, green:209/255, blue:214/255), lineWidth: 1)
                             .aspectRatio(contentMode: .fit)
                             .padding(3)
                             .overlay(
                                 Text("\(qty)")
-                                    .font(Font.custom("Poppins", size:12))
+                                    .font(Font.custom("Poppins-Regular", size:12))
                                     .foregroundColor(.black)
                             )
                         
-                        Image(systemName: "minus.circle.fill")
+                        Image(systemName: "plus.circle.fill")
                             .font(.system(size: 24))
-                            .foregroundStyle(Color(red: 255/255, green: 195/255, blue: 75/255))
+                            .foregroundStyle(Color(red: 255/255, green: 195/255, blue: 75/255)).onTapGesture {
+                                qty += 1
+                            }
                     }.aspectRatio(contentMode: .fit)
                 }
             }

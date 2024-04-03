@@ -178,10 +178,10 @@ struct HomeView: View {
                         VStack(alignment: .leading, spacing: 4){
                             HStack(spacing: 4){
                                 Image(systemName: "storefront").font(.system(size: 16))
-                                Text("Lawson Syahdan").font( Font.custom("Poppins",size:10))
+                                Text("Lawson Syahdan").font( Font.custom("Poppins-Regular",size:10))
                             }.foregroundColor(.white)
                             HStack(spacing: 8) {
-                                Text("Lawson Syahdan").font(Font.custom("Poppins", size: 16)).fontWeight(.bold)
+                                Text("Lawson Syahdan").font(Font.custom("Poppins-Regular", size: 16)).fontWeight(.bold)
                                 NavigationLink(destination: Maps().navigationBarBackButtonHidden(true)){
                                     Image(systemName: "chevron.down").font(.system(size: 16))
                                 }

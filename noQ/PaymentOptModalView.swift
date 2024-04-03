@@ -41,7 +41,7 @@ struct PaymentOptModalView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 23)
-                    Text("Apple Pay").font(Font.custom("Poppins", size: 16))
+                    Text("Apple Pay").font(Font.custom("Poppins-Regular", size: 16))
                     Spacer()
                 }
                 HStack(spacing: 12){
@@ -49,7 +49,7 @@ struct PaymentOptModalView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 23)
-                    Text("Gopay").font(Font.custom("Poppins", size: 16))
+                    Text("Gopay").font(Font.custom("Poppins-Regular", size: 16))
                     Spacer()
                 }
                 HStack(spacing: 12){
@@ -57,7 +57,7 @@ struct PaymentOptModalView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 23)
-                    Text("Dana").font(Font.custom("Poppins", size: 16))
+                    Text("Dana").font(Font.custom("Poppins-Regular", size: 16))
                     Spacer()
                 } 
                 
@@ -70,7 +70,7 @@ struct PaymentOptModalView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 23)
-                    Text("BRI").font(Font.custom("Poppins", size: 16))
+                    Text("BRI").font(Font.custom("Poppins-Regular", size: 16))
                     Spacer()
                 }
                 HStack(spacing: 12){
@@ -78,7 +78,7 @@ struct PaymentOptModalView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 23)
-                    Text("BCA").font(Font.custom("Poppins", size: 16))
+                    Text("BCA").font(Font.custom("Poppins-Regular", size: 16))
                     Spacer()
                 }
                 HStack(spacing: 12){
@@ -86,7 +86,7 @@ struct PaymentOptModalView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 23)
-                    Text("BNI").font(Font.custom("Poppins", size: 16))
+                    Text("BNI").font(Font.custom("Poppins-Regular", size: 16))
                     Spacer()
                 }
                 
@@ -98,7 +98,7 @@ struct PaymentOptModalView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 23)
-                    Text("Visa").font(Font.custom("Poppins", size: 16))
+                    Text("Visa").font(Font.custom("Poppins-Regular", size: 16))
                     Spacer()
                 }
                 HStack(spacing: 12){
@@ -106,7 +106,7 @@ struct PaymentOptModalView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 23)
-                    Text("Mastercard").font(Font.custom("Poppins", size: 16))
+                    Text("Mastercard").font(Font.custom("Poppins-Regular", size: 16))
                     Spacer()
                 }
             

@@ -18,11 +18,11 @@ struct OrderDoneView: View {
                 VStack (spacing: 24){
                     VStack{
                         Text("Thank you for")
-                            .font(Font.custom("Poppins", size: 28).weight(.heavy))
+                            .font(Font.custom("Poppins-Regular", size: 28).weight(.heavy))
                             .multilineTextAlignment(.center)
                             .foregroundColor(.white)
                         Text("shopping with NoQ")
-                            .font(Font.custom("Poppins", size: 28).weight(.heavy))
+                            .font(Font.custom("Poppins-Regular", size: 28).weight(.heavy))
                             .multilineTextAlignment(.center)
                             .foregroundColor(.white)
                     }

@@ -25,7 +25,7 @@ struct SignUpView: View {
                     // Sub-Header/S5›
                     Text("Back")
                       .font(
-                        Font.custom("Poppins", size: 14)
+                        Font.custom("Poppins-Regular", size: 14)
                       )
                       .foregroundColor(Constants.colorsBaseBlack)
                       .onTapGesture (perform: {
@@ -43,14 +43,14 @@ struct SignUpView: View {
                     VStack (alignment: .center, spacing: 0){
                         Text("Sign Up")
                           .font(
-                            Font.custom("Poppins", size: 34)
+                            Font.custom("Poppins-Regular", size: 34)
                           )
                           .fontWeight(.bold)
                           .foregroundColor(Color(red: 0.11, green: 0.11, blue: 0.11))
                         
                         // Body/B1
                         Text("You’ll be shopping in no time!")
-                          .font(Font.custom("Poppins", size: 20))
+                          .font(Font.custom("Poppins-Regular", size: 20))
                           .foregroundColor(Color(red: 0.11, green: 0.11, blue: 0.11))
                     }
                     
@@ -58,7 +58,7 @@ struct SignUpView: View {
                     VStack (alignment: .trailing, spacing: 16){
                         VStack(alignment: .leading){
                             Text("Name")
-                              .font(Font.custom("Poppins", size: 14))
+                              .font(Font.custom("Poppins-Regular", size: 14))
                               .multilineTextAlignment(.center)
                               .foregroundColor(Color(red: 0.33, green: 0.34, blue: 0.35))
                             TextField(text: $name, prompt: Text("Jane Doe")) {
@@ -73,7 +73,7 @@ struct SignUpView: View {
                         
                         VStack(alignment: .leading){
                             Text("Username")
-                              .font(Font.custom("Poppins", size: 14))
+                              .font(Font.custom("Poppins-Regular", size: 14))
                               .multilineTextAlignment(.center)
                               .foregroundColor(Color(red: 0.33, green: 0.34, blue: 0.35))
                             TextField(text: $username, prompt: Text("janedoe12")) {
@@ -88,7 +88,7 @@ struct SignUpView: View {
                         
                         VStack(alignment: .leading){
                             Text("Email")
-                              .font(Font.custom("Poppins", size: 14))
+                              .font(Font.custom("Poppins-Regular", size: 14))
                               .multilineTextAlignment(.center)
                               .foregroundColor(Color(red: 0.33, green: 0.34, blue: 0.35))
                             TextField(text: $email, prompt: Text("example@email .com")) {
@@ -106,7 +106,7 @@ struct SignUpView: View {
                         // Password
                             VStack(alignment: .leading){
                                 Text("Password")
-                                    .font(Font.custom("Poppins", size: 14))
+                                    .font(Font.custom("Poppins-Regular", size: 14))
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color(red: 0.33, green: 0.34, blue: 0.35))
                                 
@@ -160,7 +160,7 @@ struct SignUpView: View {
                         // Confirm Password
                         VStack(alignment: .leading){
                             Text("Confirm Your Password")
-                                .font(Font.custom("Poppins", size: 14))
+                                .font(Font.custom("Poppins-Regular", size: 14))
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color(red: 0.33, green: 0.34, blue: 0.35))
                             
@@ -236,12 +236,12 @@ struct SignUpView: View {
                     HStack{
                         // Body/B4
                         Text("Already have an account ? ")
-                            .font(Font.custom("Poppins", size: 12))
+                            .font(Font.custom("Poppins-Regular", size: 12))
                             .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
                             
                         Button(action: LogIn) {
                             Text("Sign In")
-                                .font(Font.custom("Poppins", size: 12))
+                                .font(Font.custom("Poppins-Regular", size: 12))
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color(red: 0.29, green: 0.8, blue: 0.89))
                         }

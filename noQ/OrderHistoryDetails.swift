@@ -32,7 +32,7 @@ struct OrderHistoryDetails: View {
                 }.padding(.bottom, 1)
                 
                 Text("26 Mar 2024 - 02.30 PM")
-                    .font(Font.custom("Poppins", size: 12))
+                    .font(Font.custom("Poppins-Regular", size: 12))
                     .foregroundColor(Color(red: 0.33, green: 0.34, blue: 0.35))
             }
             Spacer()
@@ -70,7 +70,7 @@ struct OrderHistoryDetails: View {
                         .cornerRadius(Constants.borderRadiusDEFAULT)
                         
                         Text("Rp20,800")
-                        .font(Font.custom("Poppins", size: 14))
+                        .font(Font.custom("Poppins-Regular", size: 14))
                         .foregroundColor(Color(red: 0.69, green: 0.71, blue: 0.72))
                     }
                     
@@ -108,7 +108,7 @@ struct OrderHistoryDetails: View {
                         .cornerRadius(Constants.borderRadiusDEFAULT)
                         
                         Text("Rp20,800")
-                        .font(Font.custom("Poppins", size: 14))
+                        .font(Font.custom("Poppins-Regular", size: 14))
                         .foregroundColor(Color(red: 0.69, green: 0.71, blue: 0.72))
                     }
                     
