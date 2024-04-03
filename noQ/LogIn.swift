@@ -167,10 +167,12 @@ struct LogIn: View {
                 }.padding(20)
 
             }
-            
-            }.navigationBarBackButtonHidden(true)
+Spacer()
+
+            }
+        .navigationBarBackButtonHidden(true)
         }
-    
+
     private func LogIn() {
         print("success login cune")
     }
