@@ -125,7 +125,7 @@ struct Maps: View {
                 }
             }
             
-        }
+        }.navigationBarBackButtonHidden(true)
     }
 }
 
