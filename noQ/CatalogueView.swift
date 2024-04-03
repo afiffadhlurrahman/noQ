@@ -82,13 +82,14 @@ private let categories: [Category] = [
 
 struct CatalogueView: View {
     @Environment(\.dismiss) var dismiss
-        
+    @State var toHomeView = false
+    
     var body: some View {
         NavigationStack {
             VStack(spacing: 16) {
                 HStack{
                     Image(systemName: "chevron.left").font(.system(size: 24))                .onTapGesture(count: 1) {
-                        dismiss()
+                        toHomeView.toggle()
                     }
                     Spacer()
                     // Sub-Header/S3
@@ -172,8 +173,11 @@ struct CatalogueView: View {
                         }
                     }
                 }.foregroundColor(Color(red: 0.24, green: 0.27, blue: 0.4))
-            }.padding(.horizontal, 20).padding(.vertical, 16)
-            
+            }
+            .padding(.horizontal, 20).padding(.vertical, 16)
+            .navigationDestination(isPresented: $toHomeView){
+                    HomeView()
+            }
         }.navigationBarBackButtonHidden(true)
         
     }
