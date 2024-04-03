@@ -124,7 +124,6 @@ struct ProductDetailView: View {
                     Text("Rp\(finPrice)")
                         .font(
                             Font.custom("Poppins-SemiBold", size: 14)
-                                .weight(.semibold)
                         )
                         .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26)).frame(maxWidth: .infinity, alignment: .leading).padding(.horizontal,20)
                     

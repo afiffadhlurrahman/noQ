@@ -118,7 +118,7 @@ struct HomeView: View {
                         
                         VStack(alignment: .leading, spacing: 12) {
                             Text("Category")
-                                .font(Font.custom("poppins-semibold", size: 16))
+                                .font(Font.custom("Poppins-SemiBold", size: 16))
                                 .padding(.top, 16)
                             ScrollView(.horizontal) {
                                 HStack(spacing: 16) {
@@ -149,7 +149,7 @@ struct HomeView: View {
                         
                         VStack(alignment: .leading, spacing: 12) {
                             Text("Don't Miss Out")
-                                .font(Font.custom("poppins-semibold", size: 16))
+                                .font(Font.custom("Poppins-SemiBold", size: 16))
                                 .padding(.top, 16)
                             
                             ScrollView() {
@@ -178,11 +178,13 @@ struct HomeView: View {
                         VStack(alignment: .leading, spacing: 4){
                             HStack(spacing: 4){
                                 Image(systemName: "storefront").font(.system(size: 16))
-                                Text("Lawson Syahdan").font( Font.custom("poppins",size:10))
+                                Text("Lawson Syahdan").font( Font.custom("Poppins",size:10))
                             }.foregroundColor(.white)
                             HStack(spacing: 8) {
                                 Text("Lawson Syahdan").font(Font.custom("Poppins", size: 16)).fontWeight(.bold)
-                                Image(systemName: "chevron.down").font(.system(size: 16))
+                                NavigationLink(destination: Maps().navigationBarBackButtonHidden(true)){
+                                    Image(systemName: "chevron.down").font(.system(size: 16))
+                                }
                             }.foregroundColor(.white)
                             
                         }

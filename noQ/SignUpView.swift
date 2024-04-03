@@ -26,7 +26,6 @@ struct SignUpView: View {
                     Text("Back")
                       .font(
                         Font.custom("Poppins", size: 14)
-                          .weight(.semibold)
                       )
                       .foregroundColor(Constants.colorsBaseBlack)
                       .onTapGesture (perform: {
@@ -221,7 +220,7 @@ struct SignUpView: View {
                     Button(action: LogIn) {
                         HStack(alignment: .center, spacing: 8) { // Body/B4
                             Text("Sign Up")
-                                .font(Font.custom("Poppins-semibold", size: 16))
+                                .font(Font.custom("Poppins-SemiBold", size: 16))
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(.white)
                         }

@@ -18,8 +18,7 @@ struct LandingView: View {
                             // Sub-Header/S5›
                             Text("Skip")
                               .font(
-                                Font.custom("Poppins", size: 14)
-                                  .weight(.semibold)
+                                Font.custom("Poppins-SemiBold", size: 14)
                               )
                               .foregroundColor(.white)
                               .padding(.horizontal, 40)
@@ -53,14 +52,11 @@ struct LandingView: View {
                         
                         // Button
                         VStack{
-                            NavigationLink(destination: LogIn()
-                                .navigationBarTitle("")
-                                .navigationBarHidden(true)
-                                .navigationBarBackButtonHidden(true))
+                            NavigationLink(destination: LogIn())
                             {
                                 HStack(alignment: .center, spacing: 8) { // Body/B4
                                     Text("Sign In with Email")
-                                        .font(Font.custom("Poppins-semibold", size: 16))
+                                        .font(Font.custom("Poppins-SemiBold", size: 16))
                                         .multilineTextAlignment(.center)
                                         .foregroundColor(.white)
                                 }
@@ -78,8 +74,7 @@ struct LandingView: View {
                                     // Sub-Header/S4
                                     Text("Sign in with Apple ID")
                                       .font(
-                                        Font.custom("Poppins", size: 16)
-                                          .weight(.semibold)
+                                        Font.custom("Poppins-SemiBold", size: 16)
                                       )
                                       .multilineTextAlignment(.center)
                                       .foregroundColor(Color(red: 0.11, green: 0.11, blue: 0.11))
