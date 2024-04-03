@@ -182,7 +182,9 @@ struct HomeView: View {
                             }.foregroundColor(.white)
                             HStack(spacing: 8) {
                                 Text("Lawson Syahdan").font(Font.custom("Poppins", size: 16)).fontWeight(.bold)
-                                Image(systemName: "chevron.down").font(.system(size: 16))
+                                NavigationLink(destination: Maps().navigationBarBackButtonHidden(true)){
+                                    Image(systemName: "chevron.down").font(.system(size: 16))
+                                }
                             }.foregroundColor(.white)
                             
                         }
