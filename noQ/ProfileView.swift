@@ -9,9 +9,11 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
+
+        Header(title: "Personal Info")
+            .padding(.horizontal,20)
         NavigationView {
             VStack(spacing:20) {
-                Header(title: "Personal Info")
                 Image("profile-mascot")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -86,6 +88,7 @@ struct ProfileView: View {
             .padding(.horizontal,20)
             
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
