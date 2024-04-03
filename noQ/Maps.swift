@@ -23,7 +23,7 @@ struct Maps: View {
             }.padding(.horizontal, 22)
             
             HStack{
-                Image("map1").resizable()
+                Image("map").resizable()
                     .frame(width: 350, height: 440)
             }
             
