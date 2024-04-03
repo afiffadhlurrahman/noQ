@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OrderDoneView: View {
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 Image("orderDone1")
                     .resizable()
@@ -45,7 +45,7 @@ struct OrderDoneView: View {
                 }
             }
             .background(Color(red: 0.29, green: 0.8, blue: 0.89))
-        }
+        }.navigationBarBackButtonHidden(true)
     }
 }
 

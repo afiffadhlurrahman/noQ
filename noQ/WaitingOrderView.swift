@@ -9,9 +9,15 @@ import SwiftUI
 
 struct WaitingOrderView: View {
     @Environment(\.dismiss) var backbutton
+    @State private var hasTimeElapsed = false
 
+    private func delay() async {
+        try? await Task.sleep(nanoseconds: 5_000_000_000)
+        hasTimeElapsed = true
+    }
+    
     var body: some View {
-        NavigationView{
+        NavigationStack{
             VStack {
                 ZStack(alignment: .topLeading) {
                     GifImage("animasi lari stretch_1")
@@ -128,7 +134,12 @@ struct WaitingOrderView: View {
                 .padding(.horizontal, 20)
                 .padding(.vertical,0)
                 .frame(maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-            }
+                .navigationDestination(isPresented: $hasTimeElapsed){
+                    ReadyToPickUpView()
+                }
+            }.navigationBarBackButtonHidden(true)
+        }.task {
+            await delay()
         }
 
     }

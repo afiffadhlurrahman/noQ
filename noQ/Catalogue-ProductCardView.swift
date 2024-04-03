@@ -133,6 +133,7 @@ struct Catalogue_ProductCardView: View {
                         .padding(.top, 16)
                 }.onChange(of: isActive){
                     isShowingSheet = false
+                    isActive = isActive && !isAddToBasket
                 }.navigationDestination(isPresented: $isActive){
                     BasketView()
                 }

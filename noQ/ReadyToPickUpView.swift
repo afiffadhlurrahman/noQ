@@ -9,9 +9,10 @@ import SwiftUI
 
 struct ReadyToPickUpView: View {
     @Environment(\.dismiss) var backbutton
+    @State var isCompleted = false
 
     var body: some View {
-        NavigationView{
+        NavigationStack{
             VStack {
                 ZStack(alignment: .topLeading) {
                     GifImage("animasi pick up_1")
@@ -76,7 +77,9 @@ struct ReadyToPickUpView: View {
                             .padding(.vertical, 16)
                             .frame(maxWidth: .infinity, alignment: .center)
                             .background(Color(red: 0.29, green: 0.8, blue: 0.89))
-                            .cornerRadius(14)
+                            .cornerRadius(14)                  .onTapGesture {
+                                isCompleted.toggle()
+                            }
                         }
                         //End Complete Order Button
 
@@ -105,8 +108,10 @@ struct ReadyToPickUpView: View {
                 .padding(.horizontal, 20)
                 .padding(.vertical,0)
                 .frame(maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+            }.navigationDestination(isPresented: $isCompleted){
+                OrderDoneView()
             }
-        }
+        }.navigationBarBackButtonHidden(true)
 
     }
 }

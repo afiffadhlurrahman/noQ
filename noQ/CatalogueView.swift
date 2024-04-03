@@ -82,7 +82,7 @@ private let categories: [Category] = [
 
 struct CatalogueView: View {
     @Environment(\.dismiss) var dismiss
-    
+        
     var body: some View {
         NavigationStack {
             VStack(spacing: 16) {
@@ -117,6 +117,10 @@ struct CatalogueView: View {
                         }
                     }.frame(maxWidth: .infinity)
                     Image(systemName: "basket")
+                    ZStack {
+                        Image(systemName: "basket")
+                        Circle().frame(width: 8).foregroundStyle(Color(red: 1, green: 0.42, blue: 0)).offset(x:8, y:-3)
+                    }
                 }
                 HStack{
                     HStack(alignment: .center, spacing: 10) {
