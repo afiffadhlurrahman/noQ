@@ -131,10 +131,10 @@ struct OrderHistoryDetails: View {
             
             HStack{
                 Text("4 Items")
-                    .font(Font.custom("poppins-semibold", size:14))
+                    .font(Font.custom("Poppins-SemiBold", size:14))
                 Spacer()
                 Text("Rp30,500")
-                    .font(Font.custom("poppins-semibold", size:20))
+                    .font(Font.custom("Poppins-SemiBold", size:20))
             }
 
             // Button Reorder

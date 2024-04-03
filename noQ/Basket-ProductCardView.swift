@@ -29,7 +29,7 @@ struct Basket_ProductCardView: View {
                     .font(Font.custom("Poppins-SemiBold", size: 14))
                 
                 HStack(spacing: 8, content: {
-                    Text("\(disc) Off")                    .font(Font.custom("poppins", size:12))
+                    Text("\(disc) Off")                    .font(Font.custom("Poppins", size:12))
                         .foregroundStyle(Color.white)
                         .padding(.horizontal, 4)
                         .padding(.vertical, 2)
@@ -38,14 +38,14 @@ struct Basket_ProductCardView: View {
                     
                     
                     Text("Rp\(initPrice)")
-                        .font(Font.custom("poppins", size:14))
+                        .font(Font.custom("Poppins", size:14))
                         .foregroundStyle(Color(red:176/255, green:180/255, blue:184/255))
                 }
                 )
                 
                 HStack(alignment: .center){
                     Text("Rp\(finPrice)")
-                        .font(Font.custom("poppins-semiBold", size:16))
+                        .font(Font.custom("Poppins-semiBold", size:16))
                     Spacer()
                     HStack {
                         Image(systemName: "plus.circle.fill").font(.system(size: 24))
@@ -56,7 +56,7 @@ struct Basket_ProductCardView: View {
                             .padding(3)
                             .overlay(
                                 Text("\(qty)")
-                                    .font(Font.custom("poppins", size:12))
+                                    .font(Font.custom("Poppins", size:12))
                                     .foregroundColor(.black)
                             )
                         

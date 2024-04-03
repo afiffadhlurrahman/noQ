@@ -18,11 +18,11 @@ struct OrderDoneView: View {
                 VStack (spacing: 24){
                     VStack{
                         Text("Thank you for")
-                            .font(Font.custom("poppins", size: 28).weight(.heavy))
+                            .font(Font.custom("Poppins", size: 28).weight(.heavy))
                             .multilineTextAlignment(.center)
                             .foregroundColor(.white)
                         Text("shopping with NoQ")
-                            .font(Font.custom("poppins", size: 28).weight(.heavy))
+                            .font(Font.custom("Poppins", size: 28).weight(.heavy))
                             .multilineTextAlignment(.center)
                             .foregroundColor(.white)
                     }
@@ -32,7 +32,7 @@ struct OrderDoneView: View {
                         HStack {
                             Image(systemName: "menucard")
                             Text("Back to Catalogue")
-                                .font(Font.custom("poppins-semibold", size: 16))
+                                .font(Font.custom("Poppins-SemiBold", size: 16))
                         }
                         .padding(.vertical, 16)
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)

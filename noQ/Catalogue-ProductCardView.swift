@@ -88,7 +88,6 @@ struct Catalogue_ProductCardView: View {
                         Text("Rp\(finPrice)")
                             .font(
                                 Font.custom("Poppins-SemiBold", size: 14)
-                                    .weight(.semibold)
                             )
                             .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26)).frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
                     }

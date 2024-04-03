@@ -27,13 +27,13 @@ struct Checkout_ProductCardView: View {
 
                 HStack(alignment: .center){
                     Text("Rp\(price)")
-                        .font(Font.custom("poppins-semiBold", size:16))
+                        .font(Font.custom("Poppins-semiBold", size:16))
                     Spacer()
                     Text("x\(qty)")
-                        .font(Font.custom("poppins-semiBold", size:16))
+                        .font(Font.custom("Poppins-semiBold", size:16))
                     Spacer()
                     Text("Rp 20.800")
-                        .font(Font.custom("poppins-semiBold", size:16))
+                        .font(Font.custom("Poppins-semiBold", size:16))
                 }
             }
 

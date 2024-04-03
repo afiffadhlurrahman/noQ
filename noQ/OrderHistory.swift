@@ -65,7 +65,6 @@ struct OrderHistory: View {
                             }
                             .font(
                               Font.custom("Poppins-SemiBold", size: 14)
-                                .weight(.semibold)
                             )
                             .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
                             
@@ -140,7 +139,6 @@ struct OrderHistory: View {
                             }
                             .font(
                               Font.custom("Poppins-SemiBold", size: 14)
-                                .weight(.semibold)
                             )
                             .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
                             
@@ -216,7 +214,6 @@ struct OrderHistory: View {
                             }
                             .font(
                               Font.custom("Poppins-SemiBold", size: 14)
-                                .weight(.semibold)
                             )
                             .foregroundColor(Color(red: 0.22, green: 0.25, blue: 0.26))
                             

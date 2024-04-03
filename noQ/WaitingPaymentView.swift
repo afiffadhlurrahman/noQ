@@ -62,16 +62,16 @@ struct WaitingPaymentView: View {
                             HStack {
                                 VStack(alignment: .leading) {
                                     Text("Order #4231")
-                                        .font(Font.custom("poppins-semibold", size: 20))
+                                        .font(Font.custom("Poppins-SemiBold", size: 20))
                                         .foregroundStyle(Color(red: 0.22, green: 0.25, blue: 0.26))
 
                                     Text("26 Mar 2024 - 02.30 PM")
-                                        .font(Font.custom("poppins", size: 12))
+                                        .font(Font.custom("Poppins", size: 12))
                                         .foregroundStyle(Color(red: 0.33, green: 0.34, blue: 0.35))
                                 }
                                 Spacer()
                                 Text("Waiting for Payment")
-                                    .font(Font.custom("poppins-semibold", size: 16))
+                                    .font(Font.custom("Poppins-SemiBold", size: 16))
                                     .foregroundStyle(Color(red: 1, green: 0.76, blue: 0.29))
                                     .padding(.horizontal,12)
                                     .padding(.vertical,8)
@@ -86,7 +86,7 @@ struct WaitingPaymentView: View {
                                 Image(systemName: "mappin")
                                     .foregroundStyle(Color(red: 1, green: 0.76, blue: 0.29))
                                 Text("Lawson Syahdan")
-                                    .font(Font.custom("poppins", size: 14))
+                                    .font(Font.custom("Poppins", size: 14))
                                     .foregroundStyle(Color(red: 0.22, green: 0.25, blue: 0.26))
                                 Spacer()
                             }
@@ -98,7 +98,7 @@ struct WaitingPaymentView: View {
                         }) {
                             HStack(alignment: .center, spacing: 8) {
                                 Text("Complete Order")
-                                    .font(Font.custom("Poppins-semibold", size: 16))
+                                    .font(Font.custom("Poppins-SemiBold", size: 16))
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(.white)
                             }
@@ -113,10 +113,10 @@ struct WaitingPaymentView: View {
                         //total items start
                         HStack {
                             Text("5 Items")
-                                .font(Font.custom("poppins-semibold", size: 14))
+                                .font(Font.custom("Poppins-SemiBold", size: 14))
                             Spacer()
                             Text("Rp250,000")
-                                .font(Font.custom("poppins-semibold", size: 20))
+                                .font(Font.custom("Poppins-SemiBold", size: 20))
 
                         }
                         //end total items
@@ -133,7 +133,7 @@ struct WaitingPaymentView: View {
                             Image(systemName: "basket")
                                 .foregroundStyle(Color(red: 0.96, green: 0.25, blue: 0.37))
                             Text("Cancel Order")
-                                .font(Font.custom("poppins-semibold", size: 14))
+                                .font(Font.custom("Poppins-SemiBold", size: 14))
                                 .foregroundStyle(Color(red: 0.96, green: 0.25, blue: 0.37))
                         }
 
