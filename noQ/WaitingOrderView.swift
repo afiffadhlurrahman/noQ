@@ -10,10 +10,16 @@ import SwiftUI
 struct WaitingOrderView: View {
     @Environment(\.dismiss) var backbutton
     @State private var hasTimeElapsed = false
-
+    @State private var timeRe = 5
+    
     private func delay() async {
-        try? await Task.sleep(nanoseconds: 5_000_000_000)
-        hasTimeElapsed = true
+        try? await Task.sleep(nanoseconds: 1_000_000_000)
+        timeRe -= 1
+        if timeRe > 0 {
+           await delay()
+        }else{
+            hasTimeElapsed.toggle()
+        }
     }
     
     var body: some View {
@@ -41,7 +47,7 @@ struct WaitingOrderView: View {
                                         .font(Font.custom("Poppins-Semibold", size: 14))
 
                                     Spacer()
-                                    Text("10m 2s")
+                                    Text("\(timeRe) s")
                                         .font(Font.custom("Poppins-Semibold", size: 24))
                                         .foregroundColor(Color(red: 0.29, green: 0.8, blue: 0.89))
                                 }
